@@ -1,0 +1,25 @@
+.title {
+  margin: 50px 0;
+}
+.title a {
+  text-decoration: none;
+}
+.title a:hover {
+  color: red;
+}
+.demo,
+.testtask,
+.rust,
+.webpack,
+.csharp1,
+.csharp2 {
+  margin-bottom: 25px;
+}
+.demo:hover,
+.testtask:hover,
+.rust:hover,
+.webpack:hover,
+.csharp1:hover,
+.csharp2:hover {
+  color: red;
+}

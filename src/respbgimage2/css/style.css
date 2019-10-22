@@ -1,0 +1,216 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+}
+a:hover,
+button:hover {
+  color: red !important;
+  cursor: pointer;
+}
+.header {
+  position: relative;
+  padding-bottom: 10px;
+}
+.header__bg {
+  background-image: url("../img/bg_photo.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #27eae3;
+  background-image: linear-gradient(43deg, #282b44 0%, #3d4480 100%);
+  opacity: 0.97;
+}
+.header__content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.menu__wrapper {
+  padding-top: 50px;
+}
+.logo__content {
+  display: inline-flex;
+}
+.logo__content .logo img {
+  max-width: 110px;
+  width: 100%;
+  margin-right: 30px;
+}
+.logo__content .desc {
+  border-left: 2px solid #38425e;
+}
+.logo__content .desc p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Ubuntu - Regular";
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  color: #fff;
+  margin: 0 0 0 30px;
+}
+.logo__content .desc p span {
+  color: #60e5d7;
+  font-family: "Ubuntu Light";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.main__nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+.main__nav a:not(:last-of-type) {
+  margin-right: 30px;
+}
+.main__nav button {
+  color: #393e6b;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  margin-left: 30px;
+  max-width: 140px;
+}
+.mobile__menu .main__nav {
+  display: flex;
+  flex-direction: column;
+}
+.mobile__menu .main__nav a {
+  margin: 0 0 10px 0;
+}
+.mobile__menu .main__nav button {
+  margin: 10px auto 0 auto;
+  max-width: 140px;
+}
+.btn__toggle-is-active {
+  display: none;
+}
+.button__toggle {
+  width: 13px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.button__toggle svg * {
+  fill: #ffffff;
+}
+.main__wrapper {
+  margin: 90px 0;
+}
+.mobile__desc {
+  border-top: 2px solid #49657d;
+}
+.mobile__desc p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Ubuntu - Regular";
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  color: #fff;
+  margin: 20px 0 0 0;
+}
+.mobile__desc p span {
+  color: #60e5d7;
+  font-family: "Ubuntu Light";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.left__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left__wrapper h1 {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 0.85px;
+  margin-bottom: 75px;
+}
+.left__wrapper button {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+  border-radius: 28px;
+  background-color: #0facbb;
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+}
+.right__wrapper img {
+  max-width: 437px;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1200px) {
+  .main__nav a:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .main__nav button {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .desktop__menu {
+    display: none;
+  }
+  .mobile__menu .main__nav {
+    padding: 20px 0;
+  }
+  .main__wrapper {
+    margin: 30px 0;
+  }
+}
+@media screen and (min-width: 991px) {
+  .mobile__menu,
+  .button__toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo__content .desc {
+    display: none;
+  }
+  .left__wrapper {
+    text-align: center !important;
+    margin-bottom: 40px;
+  }
+  .left__wrapper h1 {
+    margin-bottom: 30px;
+  }
+  .left__wrapper button {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 10px;
+  }
+  .right__wrapper img {
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile__desc {
+    display: none;
+  }
+}

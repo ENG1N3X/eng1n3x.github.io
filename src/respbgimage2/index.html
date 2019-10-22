@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link
+   rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous"
+  />
+  <!-- Developer CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Responsive bg image with content</title>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container-fluid">
+    <div class="header__bg"></div>
+    <div class="header__overlay"></div>
+    <div class="header__content container">
+     <!-- desktop__menu -->
+     <div class="row d-flex align-items-center menu__wrapper">
+      <div class="col-6">
+       <div class="logo__content">
+        <div class="logo">
+         <img src="./img/logo_header.svg" alt="logo" />
+        </div>
+        <div class="desc">
+         <p>Сервис онлайн-консультирования <br /><span>чат на сайт + 10 каналов</span></p>
+        </div>
+       </div>
+      </div>
+      <div class="col-6 text-center desktop__menu">
+       <nav class="main__nav">
+        <a href="#!">УСТАНОВКА</a>
+        <a href="#!">ВОЗМОЖНОСТИ</a>
+        <a href="#!">СТОИМОСТЬ</a>
+        <button id="button1" class="btn">РЕГИСТРАЦИЯ</button>
+       </nav>
+      </div>
+      <!-- button toggle menu active -->
+      <div class="col-6">
+       <div id="button__tgmenu" class="button__toggle" role="button">
+        <svg
+         version="1.1"
+         id="Слой_1"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px"
+         y="0px"
+         viewBox="0 0 13 11"
+         style="enable-background:new 0 0 13 11;"
+         xml:space="preserve"
+        >
+         <style type="text/css">
+          .st0 {
+           fill: none;
+          }
+         </style>
+         <g>
+          <path class="st0" d="M0,6.3h13V4.7H0V6.3z M0,11h13V9.4H0V11z M0,0v1.6h13V0H0z" />
+         </g>
+        </svg>
+       </div>
+      </div>
+      <!-- // -->
+     </div>
+     <!-- mobile__menu -->
+     <div class="row">
+      <div class="col-12 text-center mobile__menu btn__toggle-is-active">
+       <nav class="main__nav">
+        <a href="#!">УСТАНОВКА</a>
+        <a href="#!">ВОЗМОЖНОСТИ</a>
+        <a href="#!">СТОИМОСТЬ</a>
+        <button id="button1" class="btn">РЕГИСТРАЦИЯ</button>
+       </nav>
+      </div>
+     </div>
+     <div class="row main__wrapper">
+      <div class="col-12 col-sm-12 mobile__desc text-left">
+       <div class="desc">
+        <p>Сервис онлайн-консультирования <br /><span>чат на сайт + 10 каналов</span></p>
+       </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 left__wrapper text-left">
+       <h1>
+        Принимайте обращения клиентов из разных каналов в одном сервисе
+       </h1>
+       <button class="btn">Начать обрабатывать заявки с Webim</button>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 right__wrapper text-right">
+       <img src="./img/img_01_x2.png" alt="menu" />
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script
+   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"
+  ></script>
+  <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"
+  ></script>
+  <script
+   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"
+  ></script>
+  <!-- main.js -->
+  <script src="./js/main.js"></script>
+ </body>
+</html>

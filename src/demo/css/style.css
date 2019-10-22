@@ -1,0 +1,38 @@
+body {
+  font-family: "Neucha", cursive;
+}
+.demo__nav a {
+  margin-right: 20px;
+}
+.demo__nav a:last-child {
+  margin-right: 0;
+}
+.content__wrapper {
+  margin-top: 30px;
+}
+.demo__title-hover {
+  color: red;
+}
+.demo__desc-upr {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.demo__img {
+  animation: roll 2s;
+}
+.demo__img img {
+  width: 100%;
+  height: auto;
+  max-width: 720px;
+}
+.demo__footer {
+  margin-top: 30px;
+}
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
