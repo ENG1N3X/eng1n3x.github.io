@@ -275,7 +275,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 10px;
+  top: 15px;
   align-items: flex-start;
 }
 .slider__prev,
