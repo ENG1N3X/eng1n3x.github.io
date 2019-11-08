@@ -1,0 +1,40 @@
+body {
+  font-family: "Neucha", cursive;
+}
+
+.header,
+.header__nav {
+  margin-bottom: 20px;
+}
+
+.header__nav-link {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__image {
+  animation: roll 2s;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    max-width: 720px;
+  }
+}
+
+.demo__footer {
+  margin-top: 30px;
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link
+   rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous"
+  />
+  <!-- Developer CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Responsive bg image with content</title>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container-fluid">
+    <div class="header__bg"></div>
+    <div class="header__overlay"></div>
+    <div class="header__content">
+     <!-- desktop__menu -->
+     <div class="row desktop__menu">
+      <div class="col-12 text-center">
+       <nav class="main__nav">
+        <a href="#!">Menu1</a>
+        <a href="#!">Menu2</a>
+        <a href="#!">Menu3</a>
+        <a href="#!">Menu4</a>
+        <a href="#!">Menu5</a>
+        <a href="#!">Menu6</a>
+        <button id="button1" class="btn btn-primary">Button1</button>
+       </nav>
+      </div>
+     </div>
+     <!-- mobile__menu -->
+     <div class="row button__toggle">
+      <div class="col-12 text-right">
+       <button id="button__tgmenu" class="btn btn-danger">Toggle menu</button>
+      </div>
+     </div>
+     <div class="row mobile__menu btn__toggle-is-active">
+      <div class="col-12 text-center">
+       <nav class="main__nav">
+        <a href="#!">Menu1</a>
+        <a href="#!">Menu2</a>
+        <a href="#!">Menu3</a>
+        <a href="#!">Menu4</a>
+        <a href="#!">Menu5</a>
+        <a href="#!">Menu6</a>
+        <button id="button1" class="btn btn-primary">Button1</button>
+       </nav>
+      </div>
+     </div>
+     <div class="row main__wrapper">
+      <div class="col-12 col-sm-6 form__wrapper">
+       <form action="#">
+        <div class="form-group">
+         <input type="email" id="emailInput" class="form-control" placeholder="Text1" />
+         <input type="text" id="textInput" class="form-control" placeholder="Text2" />
+         <input type="password" id="passInput" class="form-control" placeholder="Text3" />
+         <button class="btn btn-success">Success1</button>
+        </div>
+       </form>
+      </div>
+      <div class="col-12 col-sm-6 content__wrapper">
+       <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       </h1>
+       <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui amet saepe reprehenderit dignissimos temporibus, quidem culpa laborum nisi
+        nihil, nesciunt deserunt, hic at quisquam! <span>Magni alias consequuntur officia eos perferendis! </span>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script
+   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"
+  ></script>
+  <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"
+  ></script>
+  <script
+   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+   crossorigin="anonymous"
+  ></script>
+  <!-- main.js -->
+  <script src="./js/main.js"></script>
+ </body>
+</html>
