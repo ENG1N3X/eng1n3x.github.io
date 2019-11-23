@@ -499,6 +499,115 @@ a:hover {
     padding: 10px 15px;
   }
 }
+.team {
+  padding: 120px 0;
+}
+.team__wrapper {
+  max-width: 1170px;
+}
+.team__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+}
+.team__desc {
+  max-width: 620px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team__top {
+  margin-bottom: 120px;
+}
+.team__indicators {
+  position: relative;
+  bottom: 0;
+  padding-top: 120px;
+}
+.team__indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #00897b;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.team__indicators .active {
+  background-color: #00897b !important;
+}
+.team__content-img {
+  height: auto;
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 30px;
+}
+.team__content-title {
+  font-family: "Open Sans - Semibold";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.team__content-desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin-bottom: 30px;
+}
+.team__content-buttons {
+  display: flex;
+  justify-content: center;
+}
+.team__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f0f1f1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.team__button:last-child {
+  margin-right: 0;
+}
+.team__button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #00897b;
+}
+.team__button-link {
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 20px 0;
+  }
+  .team__top {
+    margin-bottom: 20px;
+  }
+  .team__content-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .team__button:last-child {
+    margin-bottom: 0;
+  }
+  .team__indicators {
+    padding-top: 20px;
+  }
+}
 .contact {
   position: relative;
 }
