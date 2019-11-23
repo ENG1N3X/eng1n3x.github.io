@@ -641,15 +641,12 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.blog__content {
-  margin-bottom: 120px;
-}
 .blog__content-img {
   max-width: 570px;
   width: 100%;
   height: auto;
 }
-.blog__right {
+.blog__info {
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -669,6 +666,9 @@ a:hover {
   line-height: 22px;
   letter-spacing: 0.75px;
 }
+.blog__bottom {
+  margin-top: 120px;
+}
 .blog__button {
   width: 220px;
   height: 70px;
@@ -685,6 +685,35 @@ a:hover {
   color: #00897b;
   border: 3px solid #00897b;
   background-color: rgba(0, 0, 0, 0);
+}
+@media screen and (max-width: 768px) {
+  .blog {
+    padding: 20px 0;
+  }
+  .blog__top {
+    margin-bottom: 20px;
+  }
+  .blog__left {
+    margin-bottom: 20px;
+  }
+  .blog__content {
+    padding: 20px 0;
+    margin-bottom: 40px;
+    background-color: #fff;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog__info {
+    text-align: center !important;
+  }
+  .blog__content-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog__bottom {
+    margin-top: 20px;
+  }
 }
 .contact {
   position: relative;
