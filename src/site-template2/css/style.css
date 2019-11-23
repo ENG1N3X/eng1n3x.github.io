@@ -762,7 +762,7 @@ a:hover {
   margin-right: auto;
 }
 .contact__top {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .contact__pos {
   margin-bottom: 80px;
@@ -818,9 +818,18 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .contact__content {
-    padding: 120px 0;
+    padding: 20px 0;
+  }
+  .contact__top {
+    margin-bottom: 20px;
   }
   .contact__pos {
+    margin-bottom: 20px;
+  }
+  .contact__circle {
+    margin-bottom: 20px;
+  }
+  .contact__pos-desc {
     margin-bottom: 20px;
   }
   .contanct__form {
