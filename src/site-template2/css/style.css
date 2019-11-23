@@ -110,7 +110,12 @@ a:hover {
   margin-right: 0;
 }
 .home__button:hover {
-  color: yellow;
+  background-color: #00897b;
+  border: 3px solid #00897b;
+}
+.home__button:hover:last-child {
+  border: 3px solid #f8f8f8;
+  background-color: rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 992px) {
   .home__wrapper {
@@ -272,7 +277,9 @@ a:hover {
   padding: 20px 15px;
 }
 .service__button:hover {
-  color: red;
+  background-color: #00897b;
+  border: 2px solid #fff;
+  color: #fff;
 }
 .service__panel {
   max-width: 390px;
