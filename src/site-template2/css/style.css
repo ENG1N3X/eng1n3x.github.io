@@ -608,6 +608,29 @@ a:hover {
     padding-top: 20px;
   }
 }
+.blog {
+  padding: 120px 0;
+  background-color: #e4fdf9;
+}
+.blog__wrapper {
+  max-width: 1170px;
+}
+.blog__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  margin-bottom: 35px;
+}
+.blog__desc {
+  max-width: 620px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contact {
   position: relative;
 }
