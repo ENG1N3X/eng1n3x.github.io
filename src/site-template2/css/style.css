@@ -240,6 +240,7 @@ a:hover {
 }
 .service__top {
   margin-top: 120px;
+  margin-bottom: 30px;
 }
 .service__info-img {
   max-width: 60px;
@@ -271,32 +272,35 @@ a:hover {
   line-height: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 3px solid #212121;
+  border: 2px solid #212121;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px 15px;
+  color: #212121;
 }
 .service__button:hover {
   background-color: #00897b;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
 }
 .service__panel {
   max-width: 390px;
   background-color: #fff;
   padding: 25px 0;
-  border: 10px solid #e4fdf9;
 }
 @media screen and (max-width: 768px) {
   .service,
   .service__panel {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 0;
   }
   .service__panel {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
   }
   .service__top {
     margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 .service__active {
@@ -338,7 +342,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0);
-  border: 3px solid #00897b;
+  border: 2px solid #00897b;
   padding: 15px 20px;
   margin-right: 20px;
 }
