@@ -284,6 +284,7 @@ a:hover {
 }
 .service__panel {
   max-width: 390px;
+  border: none;
   background-color: #fff;
   padding: 25px 0;
 }
@@ -342,12 +343,13 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #00897b;
+  border: 2px solid #212121;
   padding: 15px 20px;
   margin-right: 20px;
 }
 .works__button-top:hover {
   color: #fff;
+  border: 2px solid #00897b;
   background-color: #00897b;
 }
 .works__button-top:last-child {
@@ -371,12 +373,13 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #00897b;
-  border: 3px solid #00897b;
+  border: 2px solid #00897b;
   padding: 20px 60px;
   margin-top: 120px;
 }
 .works__button-bottom:hover {
   color: #212121;
+  border: 2px solid #212121;
   background-color: rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 768px) {
@@ -435,8 +438,8 @@ a:hover {
   margin-top: 120px;
 }
 .price__block {
+  border: none;
   background-color: #fff;
-  max-height: 670px;
   max-width: 400px;
   padding-bottom: 60px;
 }
@@ -444,13 +447,13 @@ a:hover {
   padding: 0;
 }
 .price__money {
-  background: blue;
+  background: #3949ab;
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   padding: 60px 0;
-  margin: 10px 10px 100px 10px;
+  margin-bottom: 50px;
 }
 .price__block-title {
-  color: red;
+  color: #fff;
   font-size: 25px;
   font-weight: 400;
   line-height: 22px;
@@ -458,11 +461,25 @@ a:hover {
   margin-bottom: 40px;
 }
 .price__block-amount {
-  color: red;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 2.5px;
+}
+.price__block-amount sup {
   font-size: 25px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 1.25px;
+  margin-right: 5px;
+}
+.price__block-amount sub {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.85px;
+  margin-left: 10px;
 }
 .price__block-desc {
   font-size: 17px;
@@ -497,7 +514,8 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .price {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 0;
   }
   .price__info {
     margin-top: 20px;
@@ -505,7 +523,12 @@ a:hover {
   .price__block {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  .price__money {
     padding: 30px 0;
+    margin-bottom: 20px;
   }
   .price__block-amount {
     margin-bottom: 30px;
@@ -690,8 +713,8 @@ a:hover {
   letter-spacing: 1px;
 }
 .blog__button:hover {
-  color: #00897b;
-  border: 3px solid #00897b;
+  color: #212121;
+  border: 2px solid #212121;
   background-color: rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 768px) {
