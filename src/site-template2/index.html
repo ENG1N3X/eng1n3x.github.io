@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto&display=swap" rel="stylesheet" />
     <!-- Bootstrap CSS -->
@@ -22,10 +21,8 @@
     <header id="header" class="header">
       <div class="container header__wrapper">
         <div class="row">
-          <div class="col-md-4 col-xl-5">
+          <div class="col-12 header__content">
             <p class="header__logo">Your Logo</p>
-          </div>
-          <div class="col-7 text-right">
             <nav class="header__nav">
               <a href="#home" class="header__nav-link">Home</a>
               <a href="#about" class="header__nav-link">About</a>
@@ -33,6 +30,19 @@
               <a href="#works" class="header__nav-link">Portfolio</a>
               <a href="#blog" class="header__nav-link">Blog</a>
               <a href="#contact" class="header__nav-link">Contact Us</a>
+            </nav>
+            <nav class="navbar-nav header__mobile">
+              <a class="nav-link dropdown-toggle header__mobile-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a href="#home" class="dropdown-item header__mobile-link">Home</a>
+                <a href="#about" class="dropdown-item header__mobile-link">About</a>
+                <a href="#service" class="dropdown-item header__mobile-link">Servicing</a>
+                <a href="#works" class="dropdown-item header__mobile-link">Portfolio</a>
+                <a href="#blog" class="dropdown-item header__mobile-link">Blog</a>
+                <a href="#contact" class="dropdown-item header__mobile-link">Contact Us</a>
+              </div>
             </nav>
           </div>
         </div>

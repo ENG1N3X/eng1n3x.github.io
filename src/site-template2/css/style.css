@@ -14,10 +14,16 @@ a:hover {
 .header__wrapper {
   max-width: 1170px;
 }
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .header__logo {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 22px;
+  margin: 0;
 }
 .header__nav-link {
   font-family: "Open Sans - Semibold";
@@ -31,22 +37,30 @@ a:hover {
 .header__nav-link:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 1200px) {
+.header__mobile-link {
+  font-family: "Open Sans - Semibold";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #212121;
+}
+@media screen and (max-width: 960px) {
+  .header {
+    padding: 20px 0;
+  }
   .header__nav-link {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 990px) {
-  .header__nav-link {
-    margin-right: 10px;
-  }
-}
-@media screen and (max-width: 920px) {
-  .header__nav {
+@media screen and (min-width: 769px) {
+  .header__mobile {
     display: none;
   }
-  .header {
-    padding: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
   }
 }
 .home {
@@ -81,7 +95,7 @@ a:hover {
 .home__title {
   color: #ffffff;
   font-family: "Open Sans - Semibold";
-  font-size: 60px;
+  font-size: 58px;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 3px;
@@ -116,7 +130,7 @@ a:hover {
   border: 3px solid #f8f8f8;
   background-color: rgba(0, 0, 0, 0);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
   .home__wrapper {
     padding-top: 100px;
     padding-bottom: 100px;
