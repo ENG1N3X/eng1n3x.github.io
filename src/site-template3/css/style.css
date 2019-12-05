@@ -125,6 +125,92 @@ body {
     margin-bottom: 0;
   }
 }
+.service {
+  padding: 100px 0;
+}
+.service__wrapper {
+  max-width: 830px;
+}
+.service__top {
+  margin-bottom: 50px;
+}
+.service__title {
+  color: #061e37;
+  font-size: 45px;
+  font-weight: 600;
+}
+.service__desc {
+  max-width: 555px;
+  color: #b0bec5;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 auto;
+}
+.service__card {
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.service__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__items {
+  display: flex;
+  align-items: center;
+}
+.service__logo {
+  margin-right: 25px;
+}
+.service__logo img {
+  max-width: 18px;
+}
+.service__name {
+  color: #061e37;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+.service__arrow {
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #2f2f2f;
+}
+.service__collapse {
+  margin-top: 25px;
+}
+.service__content {
+  display: flex;
+  align-items: center;
+}
+.service__content-img {
+  max-width: 250px;
+  margin-right: 25px;
+}
+.service__content-desc {
+  max-width: 470px;
+  color: #061e37;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.45px;
+}
+@media screen and (max-width: 768px) {
+  .service__content {
+    text-align: center;
+    flex-direction: column;
+  }
+  .service__content-img {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .contact {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -244,7 +330,7 @@ body {
   font-weight: 400;
   line-height: 25px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer {
     padding: 20px 0;
   }
@@ -264,8 +350,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .nav__top-item {
-    margin-right: 10px;
+  .nav__top-item,
+  .nav__bottom-item {
+    margin-right: 5px;
     padding: 0;
   }
 }
