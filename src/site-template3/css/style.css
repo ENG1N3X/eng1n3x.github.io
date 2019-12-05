@@ -147,6 +147,12 @@ body {
   line-height: 25px;
   margin: 0 auto;
 }
+.service__bottom {
+  margin-bottom: 20px;
+}
+.service__bottom:last-child {
+  margin-bottom: 0;
+}
 .service__card {
   padding: 25px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -174,12 +180,22 @@ body {
   text-transform: uppercase;
   margin: 0;
 }
+.service__button {
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.service__button:active,
+.service__button:focus {
+  outline: none;
+}
 .service__arrow {
   width: 0px;
   height: 0px;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #2f2f2f;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #2f2f2f;
 }
 .service__collapse {
   margin-top: 25px;
