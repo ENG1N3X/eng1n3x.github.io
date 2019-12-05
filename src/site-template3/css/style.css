@@ -181,6 +181,7 @@ body {
   margin: 0;
 }
 .service__button {
+  width: 20px;
   padding: 0;
   border: none;
   border-color: #fff;
@@ -197,6 +198,7 @@ body {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #061e37;
+  margin: 7px auto;
 }
 .service__collapse {
   margin-top: 25px;
