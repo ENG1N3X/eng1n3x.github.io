@@ -183,7 +183,8 @@ body {
 .service__button {
   padding: 0;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  border-color: #fff;
+  background-color: #fff;
   cursor: pointer;
 }
 .service__button:active,
@@ -195,7 +196,7 @@ body {
   height: 0px;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 7px solid #2f2f2f;
+  border-top: 7px solid #061e37;
 }
 .service__collapse {
   margin-top: 25px;
