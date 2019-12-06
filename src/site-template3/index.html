@@ -19,6 +19,77 @@
     <title>Site template3</title>
   </head>
   <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header__overlay">
+        <div class="container-fluid header__wrapper">
+          <div class="row header__top">
+            <div class="col-12 header__content">
+              <a href="#!" class="header__logo">
+                <div class="header__logo-img">
+                  <img src="./img/shappe.png" alt="shappe" />
+                </div>
+                <p class="header__text">
+                  Dart<br />
+                  <strong>service manager</strong>
+                </p>
+              </a>
+              <!-- desktop__navigation -->
+              <nav class="nav header__nav-desktop desktop__navigation">
+                <a href="#!" class="nav-link header__nav-link">Home</a>
+                <a href="#!" class="nav-link header__nav-link">Service</a>
+                <a href="#!" class="nav-link header__nav-link">Extension</a>
+                <a href="#!" class="nav-link header__nav-link">Pricing</a>
+                <a href="#!" class="nav-link header__nav-link">Help</a>
+              </nav>
+              <button class="btn header__login desktop__navigation">sign up</button>
+              <!-- //desktop__navigation -->
+              <!-- mobile__navigation -->
+              <div class="btn-group mobile__navigation">
+                <div class="btn-group dropleft" role="group">
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split header__login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu header__nav-mobile">
+                    <a href="#!" class="dropdown-item nav-link header__nav-link">Home</a>
+                    <a href="#!" class="dropdown-item nav-link header__nav-link">Service</a>
+                    <a href="#!" class="dropdown-item nav-link header__nav-link">Extension</a>
+                    <a href="#!" class="dropdown-item nav-link header__nav-link">Pricing</a>
+                    <a href="#!" class="dropdown-item nav-link header__nav-link">Help</a>
+                  </div>
+                </div>
+                <button type="button" class="btn header__login">
+                  sign up
+                </button>
+              </div>
+              <!-- mobile__navigation// -->
+            </div>
+          </div>
+          <div class="row header__bottom">
+            <div class="col-lg-6 col-12">
+              <h1 class="header__title">lorem Ipsum Dolor sit amet</h1>
+              <p class="header__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="header__buttons">
+                <button class="btn header__button">Buy now</button>
+                <button class="btn header__button">Try for free</button>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 header__video">
+              <iframe
+                width="600"
+                height="394"
+                src="https://www.youtube.com/embed/UF8uR6Z6KLc"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
     <!-- tool -->
     <section class="tool" id="tool">
       <div class="container-fluid tool__wrapper">
