@@ -251,6 +251,10 @@ body {
 .customers__wrapper {
   max-width: 1430px;
 }
+.customers__about {
+  display: flex;
+  align-items: center;
+}
 .customers__title {
   max-width: 450px;
   color: #ffffff;
@@ -281,11 +285,96 @@ body {
   background-color: #fff;
   color: #061e37;
 }
+.vertical .carousel-item-next.carousel-item-left,
+.vertical .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.vertical .carousel-item-next,
+.vertical .active.carousel-item-right {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100% 0);
+}
+.vertical .carousel-item-prev,
+.vertical .active.carousel-item-left {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+.left__control {
+  bottom: auto;
+}
+.right__control {
+  top: auto;
+}
+.left__control,
+.right__control {
+  height: 0%;
+  width: 100%;
+  opacity: 1;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.customer__content {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.customer__content:last-child {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+.customer__img {
+  max-width: 60px;
+  margin-right: 50px;
+}
+.customer__info {
+  padding: 20px 40px 20px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.customer__name {
+  color: #061e37;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.customer__desc {
+  max-width: 555px;
+  color: #78909c;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .customers__about {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .customers__title,
+  .customers__desc {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .customer__content {
+    margin-bottom: 10px;
+  }
+  .customer__info {
+    padding: 10px;
+  }
+}
 .team {
   padding: 100px 0;
 }
 .team__wrapper {
-  max-width: 650px;
+  max-width: 700px;
 }
 .team__top {
   margin-bottom: 100px;
