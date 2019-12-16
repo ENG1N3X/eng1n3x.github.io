@@ -1,11 +1,15 @@
 .header,
 .map {
-  padding: 40px;
+  padding: 40px 0;
 }
 .header__img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header__img img {
+  height: auto;
+  width: 100%;
 }
 .header__button {
   color: #fff;
