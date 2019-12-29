@@ -1,0 +1,17 @@
+{
+    "name": "eng1n3x.github.io",
+    "version": "1.0.0",
+    "description": "main page",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "less-watch-compiler less css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ENG1N3X/eng1n3x.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

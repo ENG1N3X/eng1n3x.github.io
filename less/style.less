@@ -1,14 +1,191 @@
-.title {
-  margin: 50px 0;
-
-  a {
-    text-decoration: none;
-    &:hover {
-      color: red;
-    }
-  }
+body {
+    font-family: "Solway", serif;
 }
 
-.block {
-  margin-bottom: 25px;
+.header {
+    padding: 50px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav__header_link {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 8px;
+
+    &:hover {
+        color: #fff;
+        border-color: #fff;
+        background-color: #000;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.mobile__nav_menu {
+    border: none;
+}
+
+.mobile__nav_icon {
+    font-size: 20px;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop__nav {
+        display: none;
+    }
+    .nav__header_link {
+        margin-right: 0;
+        padding: 5px;
+        max-width: 85px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .mobile__nav {
+        display: none;
+    }
+}
+
+// skill
+
+.skill {
+    padding: 50px 0;
+}
+
+.skill__inner {
+    align-items: center;
+}
+
+.skill__nav {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .skill__inner {
+        text-align: center;
+    }
+}
+
+// projects
+
+.projects {
+    padding: 50px 0;
+}
+
+.projects__title {
+    margin-bottom: 40px;
+}
+
+.projects__button {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// about
+
+.about {
+    padding: 50px 0;
+}
+
+.about__block {
+    align-items: center;
+}
+
+.about__title {
+    margin-bottom: 40px;
+}
+
+.about__text {
+    margin: 0;
+}
+
+.about__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__img {
+    img {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__text {
+        text-align: center;
+    }
+}
+
+// contacts
+
+.contacts {
+    padding: 50px 0;
+}
+
+.contacts__title {
+    margin-bottom: 40px;
+}
+
+.contacts__icon {
+    font-size: 40px;
+}
+
+.contacts__text {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__block {
+        margin-bottom: 20px;
+    }
+}
+
+// footer
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer__desc {
+    margin: 0;
+}
+
+.footer__author {
+    text-decoration: none !important;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+// media
+
+@media screen and (max-width: 768px) {
+    .header,
+    .skills,
+    .projects,
+    .about,
+    .contacts,
+    .footer {
+        padding: 20px 0;
+    }
 }
