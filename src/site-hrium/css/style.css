@@ -58,14 +58,20 @@ body {
   line-height: 29px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .static__cost {
     max-width: 300px;
     margin: 10px auto;
+    font-size: 18px;
+    line-height: 22px;
   }
   .static__cost span {
     display: block;
     margin-left: 0;
+  }
+  .static__place {
+    font-size: 16px;
+    line-height: 19px;
   }
   .static__full {
     margin-right: 20px;
@@ -91,9 +97,11 @@ body {
   background-color: #000;
   color: #fad264;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .static__button {
     max-width: 290px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .header {
@@ -278,12 +286,42 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .level__checkmark {
     display: none;
   }
+  .level__title {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 39px;
+  }
+  .level__name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .level__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .level__one,
+  .level__two {
+    margin-bottom: 140px !important;
+  }
+  .level__one-name {
+    text-align: center;
+  }
+  .level__one-button {
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .level__one-button,
   .level__two-button {
     max-width: 250px;
+  }
+  .level__img {
+    text-align: center !important;
   }
   .level__img img {
     max-width: 320px;
@@ -368,7 +406,7 @@ body {
   width: 100%;
   border: 1px solid #fad264;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .stock__img {
     text-align: center;
   }
@@ -379,6 +417,11 @@ body {
     max-width: 287px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .stock__top,
+  .stock__bottom {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .payment {
@@ -402,14 +445,18 @@ body {
   color: #ffa115;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .payment__title {
     max-width: 250px;
     margin: 15px auto;
+    font-size: 16px;
+    line-height: 19px;
   }
   .payment__text {
     max-width: 260px;
     margin: 30px auto;
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 .footer {
@@ -438,13 +485,17 @@ body {
   padding-bottom: 40px;
   margin: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer__copyright {
     max-width: 250px;
     margin: 15px auto;
+    font-size: 16px;
+    line-height: 19px;
   }
   .footer__info {
     max-width: 220px;
     margin: 0 auto;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
