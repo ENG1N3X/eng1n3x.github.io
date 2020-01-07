@@ -140,15 +140,16 @@ body {
 }
 .header__title {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 54px;
   line-height: 66px;
   text-align: center;
   color: #ffffff;
 }
 .header__name {
   font-family: ChinaCyr;
-  font-size: 60px;
+  font-size: 58px;
   line-height: 67px;
+  text-align: center;
   color: #fad264;
 }
 .header__name span {
@@ -216,6 +217,68 @@ body {
 }
 .header__button {
   margin-bottom: -30px;
+}
+@media screen and (max-width: 991px) {
+  .header__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
+    display: none;
+  }
+  .header__nav {
+    text-align: center;
+  }
+  .header__info {
+    max-width: 220px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header__name {
+    max-width: 164px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .header__line {
+    max-width: 220px;
+  }
+  .header__desc {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__items {
+    flex-direction: column;
+  }
+  .header__item {
+    margin: 0 auto 15px auto;
+  }
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+  .header__img {
+    text-align: center;
+  }
+  .header__img img {
+    max-width: 230px;
+  }
+  .header__payment {
+    margin-bottom: 25px;
+  }
+  .header__button {
+    margin-bottom: 70px;
+    max-width: 250px;
+  }
 }
 .level {
   margin: 60px auto;
