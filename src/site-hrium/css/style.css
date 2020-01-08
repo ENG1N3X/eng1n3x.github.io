@@ -6,6 +6,9 @@ body {
   font-family: "Lato", sans-serif;
   color: #000;
 }
+.body__overflow {
+  overflow: hidden;
+}
 .static__cost {
   font-weight: 700;
   font-size: 24px;
@@ -58,7 +61,7 @@ body {
   line-height: 29px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .static__cost {
     max-width: 300px;
     margin: 10px auto;
@@ -96,7 +99,7 @@ body {
 .static__button:hover {
   background-color: #ffe9ad;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .static__button {
     max-width: 290px;
     font-size: 16px;
@@ -353,9 +356,20 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .level__checkmark {
     display: none;
+  }
+  .level__stage-mobile {
+    flex-direction: column;
+  }
+  .level__checkmark-mobile {
+    margin-bottom: 20px;
+    margin-right: 0;
+    display: block;
+  }
+  .level__stage {
+    margin-bottom: 15px;
   }
   .level__title {
     max-width: 360px;
@@ -469,7 +483,7 @@ body {
 .stock__bottom {
   margin-top: 35px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .stock__img {
     text-align: center;
   }
@@ -508,7 +522,7 @@ body {
   color: #ffa115;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .payment__title {
     max-width: 250px;
     margin: 15px auto;
@@ -548,15 +562,18 @@ body {
   padding-bottom: 40px;
   margin: 0;
 }
-@media screen and (max-width: 768px) {
-  .footer__copyright {
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
     max-width: 250px;
-    margin: 15px auto;
+    margin: 0 auto;
+  }
+  .footer__copyright {
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 20px;
   }
   .footer__info {
-    max-width: 220px;
+    max-width: 190px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 19px;
@@ -569,16 +586,19 @@ body {
 }
 .modal__section {
   position: fixed;
-  top: 470px;
+  top: 50px;
   right: 0;
   bottom: 0;
   left: 0;
 }
 .modal__display {
   display: block !important;
+  overflow: auto;
 }
 .modal__inner {
-  background-color: #ffffff;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 .modal__title {
   font-weight: 700;
@@ -671,7 +691,7 @@ body {
   margin-bottom: 0;
   padding-bottom: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .modal__section {
     padding: 80px 0;
   }
