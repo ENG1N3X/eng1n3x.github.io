@@ -101,7 +101,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .static__button {
-    max-width: 290px;
+    max-width: 225px;
     font-size: 16px;
     line-height: 19px;
   }
@@ -124,6 +124,33 @@ body {
   .static__line-mobile {
     display: block;
   }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation: zoomIn 1s linear;
+}
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.flash {
+  animation: flash 1s linear;
+  animation-delay: 1s;
 }
 .header {
   background-image: url(../img/header-bg.svg);
@@ -196,7 +223,7 @@ body {
   display: flex;
   align-items: center;
 }
-.header__chat {
+.header__picture {
   margin-right: 20px;
   padding: 8px;
   border: 3px solid #f2c94c;
@@ -238,6 +265,9 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .header {
+    padding-top: 130px;
+  }
   .header__wrapper {
     max-width: 255px;
   }
@@ -524,13 +554,13 @@ body {
 }
 @media screen and (max-width: 767px) {
   .payment__title {
-    max-width: 250px;
+    max-width: 225px;
     margin: 15px auto;
     font-size: 16px;
     line-height: 19px;
   }
   .payment__text {
-    max-width: 260px;
+    max-width: 225px;
     margin: 30px auto;
     font-size: 24px;
     line-height: 29px;
