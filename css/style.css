@@ -1,6 +1,12 @@
 body {
   font-family: "Solway", serif;
 }
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: #000;
+}
 .header {
   padding: 50px 0;
 }
@@ -145,12 +151,6 @@ body {
 }
 .footer__desc {
   margin: 0;
-}
-.footer__author {
-  text-decoration: none !important;
-}
-.footer__author:hover {
-  color: #000;
 }
 @media screen and (max-width: 768px) {
   .header,
