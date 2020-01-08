@@ -625,28 +625,24 @@ body {
   margin-bottom: 50px;
 }
 .modal__item {
+  display: flex;
   margin-bottom: 10px;
 }
 .modal__item:last-child {
   margin-bottom: 0;
 }
 .modal__item p {
-  display: inline-block;
-  margin: 0;
+  margin: 0 0 0 20px;
+}
+.modal__items .modal__item::before {
+  content: "\2022";
+  color: #fad264;
 }
 .modal__item,
 .modal__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-}
-.modal__oval {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fad264;
-  display: inline-block;
-  margin-right: 20px;
 }
 .modal__info {
   display: flex;
@@ -669,4 +665,44 @@ body {
 .modal__text {
   margin-left: 80px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .modal__section {
+    padding: 80px 0;
+  }
+  .modal__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .modal__desc,
+  .modal__about,
+  .modal__time {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .modal__title {
+    margin-bottom: 15px;
+  }
+  .modal__item,
+  .modal__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .modal__info {
+    flex-direction: column;
+  }
+  .modal__inner {
+    max-width: 230px;
+  }
+  .modal__text {
+    margin-left: 0;
+  }
+  .modal__item p {
+    margin: 0 0 0 10px;
+  }
+  .modal__time,
+  .modal__img,
+  .modal__text {
+    text-align: center;
+  }
 }
