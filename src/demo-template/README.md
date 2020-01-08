@@ -4,10 +4,11 @@ It`s template for front-end include:
 
 1. HTML5
 2. LESS -> CSS
-3. jQuery (CDN)
-4. Bootstrap 4 (CDN)
+3. jQuery
+4. Bootstrap 4
 
 # CMD
+
 For use preprocessor 'LESS':
 less-watch-compiler less css
 
