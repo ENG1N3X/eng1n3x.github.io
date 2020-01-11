@@ -1,44 +1,31 @@
 body {
   font-family: "Amatic SC", cursive;
-}
-header {
-  position: relative;
-}
-.header__bg {
   background-image: url("../img/wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-position: top center;
   width: 100%;
   height: 100%;
-  z-index: 0;
 }
-.header__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.content__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: #27eae3;
-  background-image: linear-gradient(43deg, #282b44 0%, #3d4480 100%);
-  opacity: 0.4;
-}
-.header__content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
+  height: 100vh;
 }
 .header__content-title {
   font-weight: 700;
   font-size: 70px;
   background: #b2b7df6e;
-  margin-top: 150px;
 }
 .header__content-title span {
   color: red;
+}
+@media screen and (max-width: 767px) {
+  .header__content-title {
+    font-size: 60px;
+  }
 }
 .header__content-desc {
   font-weight: 400;
@@ -65,10 +52,7 @@ header {
   margin-bottom: 25px;
 }
 .btn__monitoring {
-  margin-bottom: 150px;
-}
-.footer {
-  background-color: #000;
+  margin-bottom: 50px;
 }
 .footer__copyright,
 .footer__year {
