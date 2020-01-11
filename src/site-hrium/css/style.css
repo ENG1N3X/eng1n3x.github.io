@@ -39,18 +39,33 @@ body {
   margin-bottom: 35px;
 }
 .static__block-content {
-  display: inline-block;
-  padding: 0 5px 0 5px;
+  position: relative;
+  padding: 5px 0;
 }
-.static__bracket-two {
+.static__block-content::before {
+  content: "";
+  background-image: url(../img/bracket.png);
+  width: 23px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: -35px;
+}
+.static__block-content::after {
+  content: "";
+  background-image: url(../img/bracket.png);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  width: 23px;
+  height: 75px;
+  position: absolute;
+  top: 2px;
+  right: -35px;
 }
 .static__place {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  padding-top: 5px;
   margin-bottom: 10px;
 }
 .static__full {
@@ -307,6 +322,9 @@ body {
   margin-bottom: -30px;
 }
 @media screen and (max-width: 991px) {
+  .header__nav {
+    text-align: center;
+  }
   .header__title {
     font-size: 36px;
     line-height: 40px;
