@@ -1,0 +1,60 @@
+.mb__50 {
+  margin-bottom: 50px;
+}
+
+.section__button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+// button1
+
+.button__one {
+  width: 200px;
+  height: 60px;
+
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-image: linear-gradient(45deg, blue, green, purple, orange, red, blue);
+  background-size: 400%;
+  border-radius: 30px;
+
+  &:hover {
+    color: aqua;
+  }
+
+  animation: wave 8s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+// button2
+
+.button__two {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, blue, green, purple, orange, red);
+  background-size: 400%;
+
+  &:hover {
+    animation: wave 8s ease-in-out infinite;
+  }
+}
