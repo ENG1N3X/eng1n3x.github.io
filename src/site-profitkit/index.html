@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <!-- Developer CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <title>ProfitKit</title>
@@ -38,24 +39,40 @@
         <div class="row">
           <div class="col-3"></div>
           <div class="col-3"></div>
-          <div class="col-3">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Action</button>
-                <button class="dropdown-item" type="button">Another action</button>
-                <button class="dropdown-item" type="button">Something else here</button>
-              </div>
-            </div>
-          </div>
+          <div class="col-3"></div>
           <div class="col-3">
             <button class="btn header__button">Начать поиск</button>
           </div>
         </div>
       </div>
     </header>
+
+    <section class="number">
+      <div class="number__item">
+        <p class="number__app">Номера</p>
+        <div class="number__choice">
+          <i class="fas fa-plus number__sign" id="room__plus"></i>
+          <span class="number__num" id="room__num"></span>
+          <i class="fas fa-minus number__sign" id="room__minus"></i>
+        </div>
+      </div>
+      <div class="number__item">
+        <p class="number__app">Взрослых</p>
+        <div class="number__choice">
+          <i class="fas fa-plus number__sign" id="adult__plus"></i>
+          <span class="number__num" id="adult__num"></span>
+          <i class="fas fa-minus number__sign" id="adult__minus"></i>
+        </div>
+      </div>
+      <div class="number__item">
+        <p class="number__app">Детей</p>
+        <div class="number__choice">
+          <i class="fas fa-plus number__sign" id="child__plus"></i>
+          <span class="number__num" id="child__num"></span>
+          <i class="fas fa-minus number__sign" id="child__minus"></i>
+        </div>
+      </div>
+    </section>
 
     <!-- //header -->
     <!-- jQuery, Popper.js, Bootstrap JS -->
