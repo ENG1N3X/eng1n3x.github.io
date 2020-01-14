@@ -28,8 +28,8 @@
     </section>
     <!-- //header navigation -->
     <!-- header -->
-    <header class="header">
-      <div class="container-fluid static__container">
+    <header class="header static__container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <h1 class="header__title">Забронируйте уникальное жилье быстро и просто</h1>
@@ -37,43 +37,46 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-3"></div>
-          <div class="col-3"></div>
-          <div class="col-3"></div>
-          <div class="col-3">
-            <button class="btn header__button">Начать поиск</button>
+          <div class="col-12">
+            <div class="header__bottom">
+              <div class="number">
+                <button class="number__button btn" id="number__button">
+                  <i class="far fa-user-circle"></i>
+                  <span class="number__text" id="number__text"></span>
+                </button>
+                <div class="number__items">
+                  <div class="number__item">
+                    <p class="number__app">Номера</p>
+                    <div class="number__choice">
+                      <button class="btn number__sign" id="room__plus"><i class="fas fa-plus"></i></button>
+                      <span class="number__num" id="room__num"></span>
+                      <button class="btn number__sign" id="room__minus"><i class="fas fa-minus"></i></button>
+                    </div>
+                  </div>
+                  <div class="number__item">
+                    <p class="number__app">Взрослых</p>
+                    <div class="number__choice">
+                      <button class="btn number__sign" id="adult__plus"><i class="fas fa-plus"></i></button>
+                      <span class="number__num" id="adult__num"></span>
+                      <button class="btn number__sign" id="adult__minus"><i class="fas fa-minus"></i></button>
+                    </div>
+                  </div>
+                  <div class="number__item">
+                    <p class="number__app">Детей</p>
+                    <div class="number__choice">
+                      <button class="btn number__sign" id="child__plus"><i class="fas fa-plus"></i></button>
+                      <span class="number__num" id="child__num"></span>
+                      <button class="btn number__sign" id="child__minus"><i class="fas fa-minus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn header__button">Начать поиск</button>
+            </div>
           </div>
         </div>
       </div>
     </header>
-
-    <section class="number">
-      <div class="number__item">
-        <p class="number__app">Номера</p>
-        <div class="number__choice">
-          <button class="btn number__sign" id="room__plus"><i class="fas fa-plus"></i></button>
-          <span class="number__num" id="room__num"></span>
-          <button class="btn number__sign" id="room__minus"><i class="fas fa-minus"></i></button>
-        </div>
-      </div>
-      <div class="number__item">
-        <p class="number__app">Взрослых</p>
-        <div class="number__choice">
-          <button class="btn number__sign" id="adult__plus"><i class="fas fa-plus"></i></button>
-          <span class="number__num" id="adult__num"></span>
-          <button class="btn number__sign" id="adult__minus"><i class="fas fa-minus"></i></button>
-        </div>
-      </div>
-      <div class="number__item">
-        <p class="number__app">Детей</p>
-        <div class="number__choice">
-          <button class="btn number__sign" id="child__plus"><i class="fas fa-plus"></i></button>
-          <span class="number__num" id="child__num"></span>
-          <button class="btn number__sign" id="child__minus"><i class="fas fa-minus"></i></button>
-        </div>
-      </div>
-    </section>
-
     <!-- //header -->
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>

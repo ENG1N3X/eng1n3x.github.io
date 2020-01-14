@@ -62,6 +62,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  padding-top: 75px;
 }
 
 .header__title {
@@ -82,6 +84,8 @@
   font-size: 15px;
   line-height: 20px;
   color: #000;
+
+  margin-bottom: 70px;
 }
 
 .header__title,
@@ -89,25 +93,62 @@
   margin-left: 33px;
 }
 
-.header__button {
-  font-family: "GothamProBold";
-  font-size: 18px;
-  line-height: 168.22%;
-  color: #fff;
+.header__bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
 
-  background: #fc6341;
+  background: #ffffff;
+  border: 3px solid #0098db;
+  box-shadow: 0px 0px 10px rgba(83, 201, 254, 0.44);
   border-radius: 3px;
+}
 
-  height: 50px;
-  max-width: 260px;
+.number {
+  position: relative;
+
+  max-width: 290px;
   width: 100%;
 }
 
-// number
+.number-active {
+  display: block !important;
+}
 
-.number {
-  max-width: 290px;
-  margin: 0 auto;
+.number__button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+
+  .number__text {
+    font-family: "GothamProRegular";
+    font-size: 14px;
+    line-height: 13px;
+    color: #040404;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+
+  i {
+    font-size: 25px;
+    color: #ff6847;
+  }
+}
+
+.number__items {
+  position: absolute;
+  bottom: -180px;
+  left: 0;
+  width: 100%;
+  display: none;
 
   background: #ffffff;
   border: 1px solid #0098db;
@@ -128,7 +169,7 @@
 }
 
 .number__app {
-  margin: 0 50px 0 0;
+  margin: 0;
 
   font-family: "GothamProBold";
   font-size: 14px;
@@ -171,4 +212,18 @@
   font-size: 14px;
   font-family: "GothamProBold";
   line-height: 168.22%;
+}
+
+.header__button {
+  font-family: "GothamProBold";
+  font-size: 18px;
+  line-height: 168.22%;
+  color: #fff;
+
+  background: #fc6341;
+  border-radius: 3px;
+
+  height: 50px;
+  max-width: 260px;
+  width: 100%;
 }
