@@ -3,6 +3,35 @@ body {
   color: #272727;
 }
 
+//fonts
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Thin";
+  src: url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.eot");
+  src: local("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin"), url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.woff") format("woff"), url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  src: url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot");
+  src: local("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman"), url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff") format("woff"), url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-LightItalic";
+  src: url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-LightItalic.eot");
+  src: local("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-LightItalic"), url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-LightItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
 // navigation
 
 .navigation {
@@ -108,5 +137,165 @@ body {
   }
   .navigation__number {
     order: 1;
+  }
+}
+
+// header
+
+.header {
+  background-image: url(../img/header-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.header__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 110px 15px 180px 15px;
+  z-index: 1;
+}
+
+.header__title {
+  max-width: 420px;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  span {
+    margin-top: 30px;
+
+    &:first-child {
+      color: #e20000;
+    }
+    &:last-child {
+      display: block;
+
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.header__desc {
+  margin-bottom: 50px;
+}
+
+.header__desc,
+.header__text {
+  color: #fff;
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.header__request {
+  label {
+    margin: 0;
+  }
+}
+
+.header__phone,
+.header__button {
+  width: 200px;
+  height: 45px;
+}
+
+.header__phone {
+  color: #ffffff;
+  font-family: "HelveticaNeueCyr-LightItalic";
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 45px;
+
+  border: 1px solid #434449;
+  background-color: #000000;
+
+  background-image: url(../img/telephone-two.png);
+  background-repeat: no-repeat;
+  background-position: 18px 50%;
+
+  &:hover {
+    border-color: #e20000;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  margin-right: 15px;
+}
+
+.header__button {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+
+  background-color: #ffffff;
+
+  background-image: url(../img/arrow-two.png);
+  background-repeat: no-repeat;
+  background-position: 170px 60%;
+
+  &:hover {
+    background-color: #e20000;
+    color: #fff;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .header__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header__wrapper {
+    padding: 60px 15px 60px 15px;
+  }
+  .header__request {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__phone {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header__title {
+    font-size: 30px;
+
+    span {
+      &:last-child {
+        font-size: 18px;
+      }
+    }
+  }
+  .header__desc {
+    margin-bottom: 25px;
   }
 }
