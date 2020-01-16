@@ -681,3 +681,117 @@ body {
     margin-bottom: 10px;
   }
 }
+.expert {
+  padding: 45px 0;
+}
+.expert__wrapper {
+  max-width: 1000px;
+}
+.expert__title {
+  max-width: 830px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+}
+.expert__inner {
+  justify-content: center;
+  text-align: center;
+}
+.expert__item {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 128px;
+  max-height: 180px;
+  margin-right: 30px;
+}
+.expert__item img {
+  margin: 0 auto 5px auto;
+}
+.expert__item:nth-child(2),
+.expert__item:nth-child(4) {
+  margin-right: 0;
+}
+.expert__name {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 0;
+}
+.expert__level {
+  display: block;
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.expert__form {
+  text-align: right;
+}
+.expert__form-name,
+.expert__form-phone,
+.expert__form-textarea,
+.expert__button {
+  background-color: #f6f6f6;
+}
+.expert__form-name,
+.expert__form-phone {
+  margin-bottom: 20px;
+}
+.expert__form-textarea {
+  max-height: 180px;
+}
+.expert__form-name,
+.expert__form-phone,
+.expert__form-textarea {
+  color: #272727;
+  font-family: "HelveticaNeueCyr-LightItalic";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  border: none;
+}
+.expert__form-name:active,
+.expert__form-phone:active,
+.expert__form-textarea:active,
+.expert__form-name:focus,
+.expert__form-phone:focus,
+.expert__form-textarea:focus {
+  box-shadow: 0 0 5px #eeff00 !important;
+  outline: none !important;
+}
+.expert__button {
+  margin-right: 0;
+}
+@media screen and (max-width: 991px) {
+  .expert__item {
+    margin-right: 10px !important;
+  }
+  .expert__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 870px) {
+  .expert__inner {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 450px) {
+  .expert__item:nth-child(2) {
+    margin-right: 0 !important;
+  }
+  .expert__item:nth-child(1),
+  .expert__item:nth-child(3) {
+    margin-right: 10px !important;
+  }
+}
+.footer__text {
+  color: #545454;
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}

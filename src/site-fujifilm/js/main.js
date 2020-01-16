@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $(".owl-carousel").owlCarousel({
+  $("#review__slider").owlCarousel({
     loop: true,
     autoplay: false,
     nav: false,
