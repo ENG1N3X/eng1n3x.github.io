@@ -23,6 +23,64 @@ body {
   font-weight: 300;
   font-style: italic;
 }
+.static__request label {
+  margin: 0;
+}
+.static__user,
+.static__phone,
+.static__button {
+  width: 200px;
+  height: 45px;
+}
+.static__user,
+.static__phone {
+  color: #ffffff;
+  font-family: "HelveticaNeueCyr-LightItalic";
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 45px;
+  border: 1px solid #434449;
+  background-color: #000000;
+}
+.static__user:hover,
+.static__phone:hover {
+  border-color: #e20000;
+}
+.static__user:active,
+.static__phone:active,
+.static__user:focus,
+.static__phone:focus {
+  box-shadow: none;
+  outline: none;
+}
+.static__user {
+  background-image: url(../img/user-one.png);
+  background-repeat: no-repeat;
+  background-position: 18px 50%;
+}
+.static__phone {
+  background-image: url(../img/telephone-two.png);
+  background-repeat: no-repeat;
+  background-position: 18px 50%;
+}
+.static__button {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #ffffff;
+  background-image: url(../img/arrow-two.png);
+  background-repeat: no-repeat;
+  background-position: 170px 60%;
+}
+.static__button:hover {
+  background-color: #e20000;
+  color: #fff;
+}
+.static__button:active,
+.static__button:focus {
+  box-shadow: none;
+  outline: none;
+}
 .navigation {
   padding: 20px 0;
 }
@@ -160,52 +218,8 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 }
-.header__request label {
-  margin: 0;
-}
-.header__phone,
-.header__button {
-  width: 200px;
-  height: 45px;
-}
 .header__phone {
-  color: #ffffff;
-  font-family: "HelveticaNeueCyr-LightItalic";
-  font-size: 14px;
-  line-height: 24px;
-  padding-left: 45px;
-  border: 1px solid #434449;
-  background-color: #000000;
-  background-image: url(../img/telephone-two.png);
-  background-repeat: no-repeat;
-  background-position: 18px 50%;
   margin-right: 15px;
-}
-.header__phone:hover {
-  border-color: #e20000;
-}
-.header__phone:active,
-.header__phone:focus {
-  box-shadow: none;
-  outline: none;
-}
-.header__button {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  background-color: #ffffff;
-  background-image: url(../img/arrow-two.png);
-  background-repeat: no-repeat;
-  background-position: 170px 60%;
-}
-.header__button:hover {
-  background-color: #e20000;
-  color: #fff;
-}
-.header__button:active,
-.header__button:focus {
-  box-shadow: none;
-  outline: none;
 }
 @media screen and (max-width: 767px) {
   .header__wrapper {
@@ -222,14 +236,6 @@ body {
   .header__wrapper {
     padding: 60px 15px 60px 15px;
   }
-  .header__request {
-    display: flex;
-    flex-direction: column;
-  }
-  .header__phone {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
   .header__title {
     font-size: 30px;
   }
@@ -238,6 +244,15 @@ body {
   }
   .header__desc {
     margin-bottom: 25px;
+  }
+  .header__request {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__name,
+  .header__phone {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 .repair {
@@ -488,5 +503,181 @@ body {
   .diff__five,
   .diff__six {
     margin-bottom: 30px;
+  }
+}
+.review {
+  padding-top: 50px;
+}
+.review__title {
+  max-width: 855px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+.review__item {
+  width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f6f6f6;
+  padding: 40px 60px 45px 45px;
+  display: flex;
+}
+.review__item img {
+  max-width: 48px;
+  max-height: 44px;
+}
+.review__block {
+  max-width: 570px;
+  margin-left: 25px;
+}
+.review__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.review__data {
+  margin-right: 50px;
+}
+.review__data,
+.review__order {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+}
+.review__text {
+  font-family: "HelveticaNeueCyr-LightItalic";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.review__text span {
+  display: block;
+  text-align: right;
+}
+.review__answer {
+  padding: 20px 0px 20px 25px;
+  background-color: #fff;
+}
+.review__admin,
+.review__desc {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+}
+.review__admin {
+  color: #e20000;
+  margin-bottom: 15px;
+}
+.review__desc {
+  max-width: 490px;
+  margin-bottom: 0;
+}
+.review__slider .owl-dots button:active,
+.review__slider .owl-dots button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.review__slider .owl-dot span {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #f6f6f6 !important;
+}
+.review__slider .owl-dots .active span {
+  background-color: #e20000 !important;
+}
+@media screen and (max-width: 991px) {
+  .review__item {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .review__item {
+    width: 400px;
+  }
+  .review__item img {
+    display: none !important;
+  }
+  .review__block {
+    margin-left: 0;
+  }
+  .review__data {
+    margin-right: 0;
+  }
+  .review__top {
+    flex-direction: column;
+  }
+  .review__answer {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .review__item {
+    width: 300px;
+  }
+  .review__item img {
+    display: none !important;
+  }
+}
+.discount {
+  background-image: url(../img/discount-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 1140px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+}
+.discount__wrapper {
+  padding: 50px 0px 50px 40px;
+}
+.discount__name {
+  color: #fff;
+  font-size: 39px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.discount__name span {
+  color: #e20000;
+}
+.discount__desc {
+  max-width: 450px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.discount__user,
+.discount__phone {
+  margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+  .discount__wrapper {
+    padding: 50px 0;
+  }
+  .discount__name {
+    text-align: center;
+  }
+  .discount__desc {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .discount__request {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .discount__user,
+  .discount__phone {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
