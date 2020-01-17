@@ -550,10 +550,13 @@ body {
 }
 .repair__slider .owl-dot:focus,
 .repair__slider .owl-dot:active {
-  -webkit-box-shadow: 0 0 20px #e20000 !important;
-  box-shadow: 0 0 20px #e20000 !important;
+  box-shadow: none !important;
   outline: none !important;
   border: none;
+}
+.repair__slider .owl-dots .active {
+  outline: 7px solid #e20000 !important;
+  outline-offset: -7px !important;
 }
 .repair__slider .owl-dot span {
   display: none !important;
@@ -957,6 +960,10 @@ body {
 .expert__item:nth-child(2),
 .expert__item:nth-child(4) {
   margin-right: 0;
+}
+.expert__item a:hover {
+  outline: 7px solid #e20000;
+  outline-offset: -7px;
 }
 .expert__name {
   font-family: "HelveticaNeueCyr-Roman";
