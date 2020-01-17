@@ -1126,6 +1126,11 @@ body {
   text-align: center;
 }
 
+.expert__items {
+  width: 290px;
+  padding: 0;
+}
+
 .expert__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1210,20 +1215,14 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .expert__items {
+    margin: 0 auto 10px auto;
+  }
   .expert__item {
     margin-right: 10px !important;
     &:last-child {
       margin-right: 0;
     }
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .expert__inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
   }
 }
 
