@@ -489,12 +489,12 @@ body {
 }
 
 .repair__ticket {
-  max-width: 1140px;
+  max-width: 1100px;
 
   background-color: #000;
 
   margin-top: 60px;
-  padding: 70px 50px 0px 50px;
+  padding: 70px 50px 0px 30px;
 }
 
 .repair__ticker-name {
@@ -667,6 +667,7 @@ body {
 
   &:focus,
   &:active {
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     outline: none !important;
     border: none;
@@ -798,7 +799,7 @@ body {
 }
 
 .difference__wrapper {
-  max-width: 1060px;
+  max-width: 1100px;
 }
 
 .diff__title {
@@ -1040,7 +1041,7 @@ body {
 }
 
 .discount__wrapper {
-  padding: 50px 0px 50px 40px;
+  padding: 50px 0px 50px 20px;
 }
 
 .discount__name {
@@ -1247,12 +1248,118 @@ body {
   }
 }
 
+// navigation-second
+
+.navigation-second {
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+
+.navigation__container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-second {
+    padding: 20px;
+  }
+}
+
+// map
+
+.map__wrapper {
+  max-width: 1100px;
+}
+
+.map__nav {
+  display: flex;
+  justify-content: space-between;
+
+  .active {
+    color: red;
+    border-bottom: 2px solid #e20000;
+    padding-bottom: 15px;
+  }
+
+  margin-bottom: 30px;
+}
+
+.map__nav-link {
+  color: #272727;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  span {
+    display: block;
+    color: #9c9c9c;
+    font-family: "HelveticaNeueCyr-Roman";
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 20px;
+
+    margin-bottom: 20px;
+  }
+  padding: 0;
+}
+
+.map__content {
+  text-align: center;
+
+  iframe {
+    max-width: 1070px;
+    width: 100%;
+    height: 490px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+
+    .active {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .map__nav-link {
+    span {
+      margin-bottom: 10px;
+    }
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .map__content {
+    iframe {
+      height: 290px;
+    }
+  }
+}
+
 // footer
+
+.footer {
+  padding: 30px 0;
+}
 
 .footer__text {
   color: #545454;
   font-family: "HelveticaNeueCyr-Roman";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
+  margin-bottom: 0;
 }
