@@ -744,6 +744,8 @@ body {
   margin-left: auto;
   background-color: #f6f6f6;
   padding: 45px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .review__item img {
