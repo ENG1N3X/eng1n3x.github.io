@@ -728,10 +728,10 @@ body {
   }
 }
 .review {
-  padding-top: 50px;
+  padding: 45px 0;
 }
 .review__title {
-  max-width: 855px;
+  max-width: 890px;
   font-size: 36px;
   font-weight: 500;
   line-height: 42px;
@@ -743,26 +743,18 @@ body {
   margin-right: auto;
   margin-left: auto;
   background-color: #f6f6f6;
-  padding: 40px 60px 45px 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: 45px 50px;
   display: flex;
 }
 .review__item img {
-  max-width: 48px;
-  max-height: 44px;
+  max-width: 50px;
+  max-height: 45px;
 }
 .review__block {
   max-width: 570px;
   margin-left: 25px;
 }
 .review__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-bottom: 20px;
 }
 .review__data {
@@ -775,33 +767,35 @@ body {
   font-weight: 300;
   line-height: 23px;
 }
-.review__text {
+.review__desc {
   font-family: "HelveticaNeueCyr-LightItalic";
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
 }
-.review__text span {
+.review__desc span {
   display: block;
   text-align: right;
+  font-family: "HelveticaNeueCyr-Roman";
 }
 .review__answer {
-  padding: 20px 0px 20px 25px;
+  padding: 20px 30px 20px;
   background-color: #fff;
 }
 .review__admin,
-.review__desc {
-  font-family: "HelveticaNeueCyr-Roman";
+.review__text {
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
 }
 .review__admin {
   color: #e20000;
-  margin-bottom: 15px;
+  font-family: "HelveticaNeueCyr-Roman";
+  margin-bottom: 10px;
 }
-.review__desc {
-  max-width: 490px;
+.review__text {
+  max-width: 500px;
+  font-family: "HelveticaNeueCyr-LightItalic";
   margin-bottom: 0;
 }
 .review__slider .owl-dots button:active,
@@ -815,7 +809,7 @@ body {
   height: 20px !important;
   background-color: #f6f6f6 !important;
 }
-.review__slider .owl-dots .active span {
+.review__slider .owl-dot.active span {
   background-color: #e20000 !important;
 }
 @media screen and (max-width: 991px) {
@@ -849,9 +843,6 @@ body {
 @media screen and (max-width: 540px) {
   .review__item {
     width: 300px;
-  }
-  .review__item img {
-    display: none !important;
   }
 }
 .discount {
@@ -1068,7 +1059,7 @@ body {
 .map__nav .active {
   color: red;
   border-bottom: 2px solid #e20000;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .map__nav-link {
   color: #272727;
@@ -1076,7 +1067,6 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 0;
 }
 .map__nav-link span {
   display: block;
@@ -1085,7 +1075,7 @@ body {
   font-size: 11px;
   font-weight: 300;
   line-height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .map__content {
   text-align: center;
@@ -1103,12 +1093,10 @@ body {
     flex-direction: column;
     text-align: center;
   }
-  .map__nav .active {
+  .map__nav-link {
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .map__nav-link {
     margin-bottom: 20px;
   }
   .map__nav-link span {

@@ -874,11 +874,11 @@ body {
 //review
 
 .review {
-  padding-top: 50px;
+  padding: 45px 0;
 }
 
 .review__title {
-  max-width: 855px;
+  max-width: 890px;
   font-size: 36px;
   font-weight: 500;
   line-height: 42px;
@@ -893,16 +893,12 @@ body {
   margin-left: auto;
 
   background-color: #f6f6f6;
-  padding: 40px 60px 45px 45px;
+  padding: 45px 50px;
 
   img {
-    max-width: 48px;
-    max-height: 44px;
+    max-width: 50px;
+    max-height: 45px;
   }
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
 
   display: flex;
 }
@@ -913,13 +909,6 @@ body {
 }
 
 .review__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
   margin-bottom: 20px;
 }
 
@@ -935,7 +924,7 @@ body {
   line-height: 23px;
 }
 
-.review__text {
+.review__desc {
   font-family: "HelveticaNeueCyr-LightItalic";
   font-size: 16px;
   font-weight: 400;
@@ -944,17 +933,17 @@ body {
   span {
     display: block;
     text-align: right;
+    font-family: "HelveticaNeueCyr-Roman";
   }
 }
 
 .review__answer {
-  padding: 20px 0px 20px 25px;
+  padding: 20px 30px 20px;
   background-color: #fff;
 }
 
 .review__admin,
-.review__desc {
-  font-family: "HelveticaNeueCyr-Roman";
+.review__text {
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
@@ -962,10 +951,12 @@ body {
 
 .review__admin {
   color: #e20000;
-  margin-bottom: 15px;
+  font-family: "HelveticaNeueCyr-Roman";
+  margin-bottom: 10px;
 }
-.review__desc {
-  max-width: 490px;
+.review__text {
+  max-width: 500px;
+  font-family: "HelveticaNeueCyr-LightItalic";
   margin-bottom: 0;
 }
 
@@ -984,7 +975,7 @@ body {
   background-color: #f6f6f6 !important;
 }
 
-.review__slider .owl-dots .active span {
+.review__slider .owl-dot.active span {
   background-color: #e20000 !important;
 }
 
@@ -1021,9 +1012,6 @@ body {
 @media screen and (max-width: 540px) {
   .review__item {
     width: 300px;
-    img {
-      display: none !important;
-    }
   }
 }
 
@@ -1284,7 +1272,7 @@ body {
   .active {
     color: red;
     border-bottom: 2px solid #e20000;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   margin-bottom: 30px;
@@ -1305,9 +1293,8 @@ body {
     font-weight: 300;
     line-height: 20px;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  padding: 0;
 }
 
 .map__content {
@@ -1327,14 +1314,11 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-
-    .active {
-      max-width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
   .map__nav-link {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     span {
       margin-bottom: 10px;
     }
