@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Inconsolata", monospace;
+}
+
+/* some settings */
+
+.container {
+ max-width: 1140px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.content-center {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.img-fluid {
+ max-width: 100%;
+ height: auto;
+}
+
+.bg-fff {
+ background: #ffffff;
+}
+
+.bg-000 {
+ background: #000000;
+}
+
+.color-fff {
+ color: #ffffff;
+}
+
+.color-000 {
+ color: #000000;
+}
+
+/* styles */
+.introduce {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.introduce img:hover {
+ cursor: pointer;
+ animation: anim-rotate 1s linear;
+}
+
+.introduce .myName {
+ display: block;
+ font-size: 40px;
+ color: green !important;
+ text-decoration: none;
+ padding: 10px 0;
+ transition: 0.3s;
+}
+
+.introduce .myName:hover {
+ color: gray !important;
+}
+
+.contacts {
+ text-align: right;
+}
+
+.contacts a {
+ display: inline-block;
+}
+
+.contacts a i {
+ font-size: 30px;
+ transition: 0.3s;
+}
+
+.contacts a:first-child i {
+ color: #0088cc;
+}
+
+.contacts a:last-child i {
+ color: #da4a4a;
+}
+
+.contacts a:first-child i:hover {
+ color: #da4a4a;
+}
+
+.contacts a:last-child i:hover {
+ color: #0088cc;
+}
+
+.contacts a:not(:last-child) {
+ margin-right: 20px;
+}
+
+/* animations */
+@keyframes anim-rotate {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 25% {
+  transform: rotate(120deg);
+ }
+ 50% {
+  transform: rotate(240deg);
+ }
+ 100% {
+  transform: rotate(0deg);
+ }
+}
+
+@media screen and (max-width: 767px) {
+ .introduce {
+  flex-direction: column;
+  margin-bottom: 40px;
+ }
+ .contacts {
+  text-align: center;
+ }
+}
