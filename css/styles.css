@@ -56,9 +56,27 @@ body {
  text-align: center;
 }
 
-.introduce img:hover {
+.introduce .img {
+ position: relative;
+}
+
+.introduce .img:hover img {
  cursor: pointer;
  animation: anim-rotate 1s linear;
+}
+
+.introduce .img .clickText {
+ position: absolute;
+ top: 90%;
+ left: 75%;
+ transform: translate(-50%, -50%);
+
+ visibility: hidden;
+ transition: 0.2s;
+}
+
+.introduce .img:hover .clickText {
+ visibility: visible;
 }
 
 .introduce .myName {
