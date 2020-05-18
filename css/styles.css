@@ -85,7 +85,7 @@ body {
  color: green !important;
  text-decoration: none;
  padding: 10px 0;
- transition: 0.3s;
+ transition: 0.2s;
 }
 
 .introduce .myName:hover {
