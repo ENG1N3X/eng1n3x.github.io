@@ -4,6 +4,7 @@
 }
 
 #form #nameError,
-#form #emailError {
+#form #emailError,
+#form #passwordError {
  color: red;
 }
