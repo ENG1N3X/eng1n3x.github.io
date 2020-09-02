@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Saol Text';
+    src: url('SaolText-Medium.eot');
+    src: url('SaolText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SaolText-Medium.woff2') format('woff2'),
+        url('SaolText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Text';
+    src: url('SaolText-Bold.eot');
+    src: url('SaolText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SaolText-Bold.woff2') format('woff2'),
+        url('SaolText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Display';
+    src: url('SaolDisplay-Regular.eot');
+    src: url('SaolDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SaolDisplay-Regular.woff2') format('woff2'),
+        url('SaolDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Text';
+    src: url('SaolText-Regular.eot');
+    src: url('SaolText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SaolText-Regular.woff2') format('woff2'),
+        url('SaolText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Display';
+    src: url('SaolDisplay-Medium.eot');
+    src: url('SaolDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SaolDisplay-Medium.woff2') format('woff2'),
+        url('SaolDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Display';
+    src: url('SaolDisplay-Medium.eot');
+    src: url('SaolDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SaolDisplay-Medium.woff2') format('woff2'),
+        url('SaolDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Text';
+    src: url('SaolText-Regular.eot');
+    src: url('SaolText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SaolText-Regular.woff2') format('woff2'),
+        url('SaolText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Display';
+    src: url('SaolDisplay-Regular.eot');
+    src: url('SaolDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SaolDisplay-Regular.woff2') format('woff2'),
+        url('SaolDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Text';
+    src: url('SaolText-Bold.eot');
+    src: url('SaolText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SaolText-Bold.woff2') format('woff2'),
+        url('SaolText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saol Text';
+    src: url('SaolText-Medium.eot');
+    src: url('SaolText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SaolText-Medium.woff2') format('woff2'),
+        url('SaolText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
