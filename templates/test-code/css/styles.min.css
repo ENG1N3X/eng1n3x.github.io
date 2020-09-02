@@ -230,7 +230,7 @@ a:focus, a:active, button:focus, button:active, form:focus, form:active, textare
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 20px 60px;
-  z-index: 15;
+  z-index: 20;
   background: #fff; }
   .headerMobile .headerMobile__search {
     position: relative;
@@ -538,12 +538,13 @@ a:focus, a:active, button:focus, button:active, form:focus, form:active, textare
   margin-bottom: 20px; }
   .productInfo.productInfo__mobile {
     display: none;
-    position: absolute;
-    top: 180px;
+    position: fixed;
+    bottom: 80px;
     margin-bottom: 0;
     width: 100%;
     background: #fff;
-    padding: 20px 20px 25px 20px; }
+    padding: 20px 20px 25px 20px;
+    z-index: 15; }
     .productInfo.productInfo__mobile .productInfo__footer select {
       font-family: AktivGrotesk, sans-serif;
       font-weight: 400;
@@ -613,7 +614,9 @@ a:focus, a:active, button:focus, button:active, form:focus, form:active, textare
 .productForm {
   border-top: 1px solid #E2E2E2;
   margin-bottom: 47px; }
-  .productForm .productForm__row {
+  .productForm .productForm__row:nth-child(2) {
+    margin-bottom: 45px; }
+  .productForm .productForm__row .productForm__header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -623,29 +626,44 @@ a:focus, a:active, button:focus, button:active, form:focus, form:active, textare
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    cursor: pointer;
     border-bottom: 1px solid #E2E2E2;
-    padding: 25px 0;
-    position: relative;
-    cursor: pointer; }
-    .productForm .productForm__row:nth-child(2) {
-      margin-bottom: 45px; }
-    .productForm .productForm__row span {
+    padding: 25px 0; }
+    .productForm .productForm__row .productForm__header span {
       font-family: Aktiv Grotesk, sans-serif;
       font-weight: 700;
       font-size: 14px;
       line-height: 20px;
       color: #1D1D1D; }
-    .productForm .productForm__row .productForm__inner {
-      position: absolute;
-      z-index: 10;
-      width: 100%;
-      min-height: 20px;
-      top: 60px;
-      background: #fff;
-      border: 1px solid #E2E2E2;
-      padding: 10px; }
-      .productForm .productForm__row .productForm__inner p {
-        margin-bottom: 0; }
+    .productForm .productForm__row .productForm__header img {
+      -webkit-transition: -webkit-transform .2s linear;
+      transition: -webkit-transform .2s linear;
+      transition: transform .2s linear;
+      transition: transform .2s linear, -webkit-transform .2s linear; }
+      .productForm .productForm__row .productForm__header img.active {
+        -webkit-transition: -webkit-transform .2s linear;
+        transition: -webkit-transform .2s linear;
+        transition: transform .2s linear;
+        transition: transform .2s linear, -webkit-transform .2s linear;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+  .productForm .productForm__row .productForm__inner {
+    background: #fff;
+    border-bottom: 1px solid #E2E2E2;
+    -webkit-transition: max-height .2s linear, overflow .2s linear, visibility .2s linear, padding .2s linear;
+    transition: max-height .2s linear, overflow .2s linear, visibility .2s linear, padding .2s linear;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden; }
+    .productForm .productForm__row .productForm__inner p {
+      margin-bottom: 0; }
+    .productForm .productForm__row .productForm__inner.active {
+      -webkit-transition: max-height .2s linear, overflow .2s linear, visibility .2s linear, padding .2s linear;
+      transition: max-height .2s linear, overflow .2s linear, visibility .2s linear, padding .2s linear;
+      overflow: visible;
+      visibility: visible;
+      max-height: 200px;
+      padding: 25px 0; }
 
 .productList {
   padding: 0;
