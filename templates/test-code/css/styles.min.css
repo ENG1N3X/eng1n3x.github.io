@@ -539,7 +539,7 @@ a:focus, a:active, button:focus, button:active, form:focus, form:active, textare
   .productInfo.productInfo__mobile {
     display: none;
     position: fixed;
-    bottom: 80px;
+    bottom: 0;
     margin-bottom: 0;
     width: 100%;
     background: #fff;
