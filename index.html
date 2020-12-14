@@ -4,22 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-  <title>Hello, how are you?</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>kudr.dev</title>
  </head>
- <body class="content-center">
-  <section class="container introduce">
-   <div class="img">
-    <img class="img-fluid" src="static/img/logo.png" alt="my-logo" />
-    <p class="mb-0 clickText">Click on image :)</p>
-   </div>
-   <h1 class="mainTitle">Hello, my name is <a class="myName" href="https://github.com/ENG1N3X">Yuri Alexandrov</a> and this is my website!</h1>
-  </section>
-  <section class="container contacts">
-   <a href="http://t-do.ru/eng1n3x/"><i class="fab fa-telegram"></i></a>
-   <a href="mailto:eng1n3x.developer@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
-  </section>
+ <body class="index-template">
+    <section class="social">
+        <a class="social__link" href="https://eng1n3x.github.io/" target="_blank"><i class="fas fa-home"></i></a>
+        <a class="social__link" href="https://github.com/ENG1N3X/" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="social__link" href="http://t-do.ru/eng1n3x/" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a class="social__link" href="mailto:eng1n3x.developer@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+    </section>
+    <section class="container">
+        <div class="search-bar">
+            <label for="search-bar__input" class="search-bar__label">Search by Github login</label>
+            <input id="search-bar__input" type="text" class="search-bar__input" placeholder="eng1n3x">
+        </div>
+    </section>
+    <section class="container">
+        <div class="card hide">
+            <img class="card__img">
+            <div class="card__content">
+                <h4 class="card__name"></h4>
+                <span class="card__nickname"></span>
+                <p class="card__bio"></p>
+                <a class="card__link" target="_blank"></a>
+            </div>
+        </div>
+        <span class="error">Nothing...</span>
+        <div class="loader hide"></div>
+    </section>
   <script src="js/main.js"></script>
  </body>
 </html>

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+// vars
+$base-bg: #191c2b;
+$base-error: #d40202;
+$base-link: #0000ff;
+$form-hover-bg: #cfcfcf;
+$loader-color: rgb(223, 119, 22);
+
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background: $base-bg;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.error {
+  display: block;
+  color: $base-error;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.loader {
+    border: 2px solid $loader-color;
+    border-right: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+    animation: anim-rotate 1s infinite linear;
+}
+
+// Social links
+section.social {
+    position: fixed;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-right: none;
+    z-index: 999999;
+    @media (max-width: 639px) {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+    .social__link {
+        font-size: 40px;
+        color: #fff;
+        transform: scale(.9);
+        @media (max-width: 639px) {
+            font-size: 30px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            @media (max-width: 639px) {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+        transition: opacity .3s linear, transform .3s linear;
+        &:hover {
+            transition: opacity .3s linear, transform .3s linear;
+            opacity: 0.8;
+            transform: scale(1);
+        }
+    }
+}
+
+// index.html
+body.index-template {
+    .search-bar {
+        padding: 60px 15px;
+        color: #fff;
+        @media (max-width: 639px) {
+            padding: 15px;
+        }
+        .search-bar__label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .search-bar__input {
+            display: block;
+            width: 100%;
+            padding: 8px 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color .3s linear;
+            &:focus, &:active, &:hover {
+                outline: none;
+                box-shadow: none;
+                transition: background-color .3s linear;
+                background-color: $form-hover-bg;
+            }
+        }
+    }
+    .card {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px;
+        color: #fff;
+        @media (max-width: 639px) {
+            padding: 15px;
+            max-width: 300px;
+        }
+        .card {
+            &__img {
+                max-width: 100%;
+                display: block;
+                height: auto;
+                &:hover {
+                    animation: anim-rotate 1s linear;
+                }
+            }
+            &__content {
+                padding: 10px;
+                text-align: center;
+            }
+            &__name {
+                font-size: 1.375rem;
+                margin-bottom: 10px;
+            }
+            &__nickname {
+                display: block;
+                font-size: 0.8rem;
+                margin-bottom: 5px;
+            }
+            &__bio {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            &__link {
+                display: inline-block;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $base-link;
+                border: 1px solid $base-link;
+                background-color: #fff;
+                padding: 8px 25px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }   
+}
+
+// Animations
+@keyframes anim-rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
