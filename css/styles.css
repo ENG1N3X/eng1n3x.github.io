@@ -133,6 +133,7 @@ body.index-template .card .card__img {
   max-width: 100%;
   display: block;
   height: auto;
+  margin: 0 auto;
 }
 body.index-template .card .card__img:hover {
   animation: anim-rotate 1s linear;

@@ -21,7 +21,7 @@ async function setUserData(userDataFromSearchBar) {
     const cardLink = card.querySelector(".card__link")
 
     cardImg.src = user.avatar_url
-    cardImg.alt = user.name
+    cardImg.alt = user.login
     cardName.innerHTML = user.name
     cardNickName.innerHTML = user.login
     cardBio.innerHTML = user.bio

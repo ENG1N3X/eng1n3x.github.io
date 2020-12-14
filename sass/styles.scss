@@ -135,6 +135,7 @@ body.index-template {
                 max-width: 100%;
                 display: block;
                 height: auto;
+                margin: 0 auto;
                 &:hover {
                     animation: anim-rotate 1s linear;
                 }
