@@ -1,6 +1,10 @@
+import fetchDataFromGithub from "./fetchDataFromGithub.js"
+import { show, hide } from "./visibilityState.js"
+
 // HTML Blocks
 const error = document.querySelector(".error")
 const loader = document.querySelector(".loader")
+const cardWrapper = document.querySelector("#card-wrapper")
 
 // Search user by login
 const searchBar = document.querySelector(".search-bar")
@@ -10,50 +14,32 @@ searchBarInput.addEventListener("change", function() {
 })
 
 // Set HTML
-async function setUserData(userDataFromSearchBar) {
-  const card = document.querySelector(".card")
-  const user = await fetchDataFromGithub(userDataFromSearchBar)
-  if(user.message != "Not Found") {
-    const cardImg = card.querySelector(".card__img")
-    const cardName = card.querySelector(".card__name")
-    const cardNickName = card.querySelector(".card__nickname")
-    const cardBio = card.querySelector(".card__bio")
-    const cardLink = card.querySelector(".card__link")
+async function setUserData(login) {
+  hide(error)
+  show(loader)
+  const data = await fetchDataFromGithub(login)
+  if(data) {
+    hide(loader)
+    if(data.message != "Not Found") {
+      hide(error)
 
-    cardImg.src = user.avatar_url
-    cardImg.alt = user.login
-    cardName.innerHTML = user.name
-    cardNickName.innerHTML = user.login
-    cardBio.innerHTML = user.bio
-    cardLink.innerHTML = user.login
-    cardLink.href = user.html_url
-    show(card)
-    hide(error)
-    hide(loader)
-  } else {
-    hide(card)
-    show(error)
-    hide(loader)
+      let cardHTML = '<div class="card">'
+        cardHTML += `<img class="card__img" src="${data.avatar_url}" alt="${data.login}">`
+        cardHTML += '<div class="card__content">'
+          if(data.name) {
+            cardHTML += `<h4 class="card__name">${data.name}</h4>`
+          }
+          cardHTML += `<span class="card__nickname">${data.login}</span>`
+          if(data.bio) {
+            cardHTML += `<p class="card__bio">${data.bio}</p>`
+          }
+          cardHTML += `<a class="card__link" href="${data.html_url}" target="_blank">Github: ${data.login}</a>`
+        cardHTML += '</div>'
+      cardHTML += '</div>'
+      cardWrapper.innerHTML = cardHTML
+    } else {
+      cardWrapper.innerHTML = ""
+      show(error, data.message)
+    }
   }
-}
-
-// Fetch user data from Github REST Api
-async function fetchDataFromGithub(user) {
-  try {
-    show(loader)
-    let response = await fetch(`https://api.github.com/users/${user}`)
-    response = await response.json()
-    return response
-  } catch(e) {
-    hide(loader)
-    console.error(e)
-  }
-}
-
-// Show/Hide user card
-function show(blockToShow) {
-  blockToShow.classList.remove("hide")
-}
-function hide(blockToHide) {
-  blockToHide.classList.add("hide")
 }
