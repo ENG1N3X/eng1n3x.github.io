@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background: #191c2b;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.error {
+  display: block;
+  color: #d40202;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.loader {
+  border: 2px solid #df7716;
+  border-right: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto;
+  animation: anim-rotate 1s infinite linear;
+}
+
+section.social {
+  position: fixed;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-right: none;
+  z-index: 999999;
+}
+@media (max-width: 639px) {
+  section.social {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+}
+section.social .social__link {
+  font-size: 40px;
+  color: #fff;
+  transform: scale(0.9);
+  transition: opacity 0.3s linear, transform 0.3s linear;
+}
+@media (max-width: 639px) {
+  section.social .social__link {
+    font-size: 30px;
+  }
+}
+section.social .social__link:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 639px) {
+  section.social .social__link:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+section.social .social__link:hover {
+  transition: opacity 0.3s linear, transform 0.3s linear;
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+body.index-template .search-bar {
+  padding: 60px 15px;
+  color: #fff;
+}
+@media (max-width: 639px) {
+  body.index-template .search-bar {
+    padding: 15px;
+  }
+}
+body.index-template .search-bar .search-bar__label {
+  display: block;
+  margin-bottom: 10px;
+}
+body.index-template .search-bar .search-bar__input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+body.index-template .search-bar .search-bar__input:focus, body.index-template .search-bar .search-bar__input:active, body.index-template .search-bar .search-bar__input:hover {
+  outline: none;
+  box-shadow: none;
+  transition: background-color 0.3s linear;
+  background-color: #cfcfcf;
+}
+body.index-template .card {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+}
+@media (max-width: 639px) {
+  body.index-template .card {
+    padding: 15px;
+    max-width: 300px;
+  }
+}
+body.index-template .card .card__img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+body.index-template .card .card__img:hover {
+  animation: anim-rotate 1s linear;
+}
+body.index-template .card .card__content {
+  padding: 10px;
+  text-align: center;
+}
+body.index-template .card .card__name {
+  font-size: 1.375rem;
+  margin-bottom: 10px;
+}
+body.index-template .card .card__nickname {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+body.index-template .card .card__bio {
+  margin: 0;
+  margin-bottom: 10px;
+}
+body.index-template .card .card__link {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0000ff;
+  border: 1px solid #0000ff;
+  background-color: #fff;
+  padding: 8px 25px;
+}
+body.index-template .card .card__link:hover {
+  text-decoration: underline;
+}
+
+@keyframes anim-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

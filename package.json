@@ -1,20 +1,16 @@
 {
- "name": "let-me-introduce-myself",
+ "name": "github.io",
  "version": "1.0.0",
- "description": "let-me-introduce-myself website",
+ "description": "github.io website",
  "main": "index.js",
  "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1"
+  "watch": "sass sass/styles.scss css/styles.css --watch"
  },
  "repository": {
   "type": "git",
   "url": "git+https://github.com/ENG1N3X/eng1n3x.github.io.git"
  },
- "keywords": [],
+ "keywords": ["website", "template"],
  "author": "eng1n3x",
- "license": "ISC",
- "bugs": {
-  "url": "https://github.com/ENG1N3X/eng1n3x.github.io/issues"
- },
- "homepage": "https://github.com/ENG1N3X/eng1n3x.github.io#readme"
+ "license": "ISC"
 }

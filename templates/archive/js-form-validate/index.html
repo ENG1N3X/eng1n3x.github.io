@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <title>js-form-validate</title>
+ </head>
+ <body style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <div class="container">
+   <div class="row justify-content-center">
+    <div class="col-7">
+     <h1 class="text-center">Form validate</h1>
+    </div>
+    <div class="col-7">
+     <form id="form">
+      <input type="text" class="form-control mb-2" id="name" placeholder="Write text here" value="defaultName" />
+      <small id="nameError" class="mb-2"></small>
+      <input type="email" class="form-control mb-2" id="email" placeholder="Write email here" value="aaa@gmail.com" />
+      <small id="emailError" class="mb-2"></small>
+      <input type="password" class="form-control mb-2" id="password" placeholder="Write password here" />
+      <small id="passwordError" class="mb-2"></small>
+      <!-- <div class="form-group form-check mb-2">
+       <input type="checkbox" class="form-check-input" id="check" />
+       <label class="form-check-label" for="check">Check me out</label>
+      </div> -->
+      <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+     </form>
+    </div>
+   </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ </body>
+</html>

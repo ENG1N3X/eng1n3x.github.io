@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>kudr.dev</title>
- </head>
- <body class="index-template">
-    <section class="social">
-        <a class="social__link" href="https://eng1n3x.github.io/" target="_blank"><i class="fas fa-home"></i></a>
-        <a class="social__link" href="https://github.com/ENG1N3X/" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="social__link" href="http://t-do.ru/eng1n3x/" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a class="social__link" href="mailto:eng1n3x.developer@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
-    </section>
-    <section class="container">
-        <div class="search-bar">
-            <label for="search-bar__input" class="search-bar__label">Search by Github login</label>
-            <input id="search-bar__input" type="text" class="search-bar__input" placeholder="eng1n3x">
-        </div>
-    </section>
-    <section class="container">
-        <div id="card-wrapper"></div>
-        <div class="loader hide"></div>
-        <span class="error">You haven't searched for a user yet.</span>
-    </section>
-  <script type="module" src="js/main.js"></script>
- </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Yuriy K. Portfolio</title>
+	</head>
+	<body class="index-template">
+		<header>
+			<h1 class="title">Yuriy K.</h1>
+		</header>
+
+		<section class="info">
+			<button type="button" class="btn btn-contact">contact</button>
+			<div class="image">
+				<img src="./static/img/logo.png" alt="logo" />
+			</div>
+		</section>
+
+		<main>
+			<div class="work">
+				<h4 class="work-header"><span class="number">#1</span>A MA MANIERE</h4>
+				<div class="work-body">
+					<span class="desc"> Website for shopify platform. Custom design. </span>
+					<a href="https://www.a-ma-maniere.com/" class="link">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#2</span>Social Status</h4>
+				<div class="work-body">
+					<span class="desc"> Website for shopify platform. Custom design. </span>
+					<a href="https://www.socialstatuspgh.com/" class="link">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#3</span>Melt Cosmetics</h4>
+				<div class="work-body">
+					<span class="desc"> Website for shopify platform. Custom design. </span>
+					<a href="https://www.meltcosmetics.com/" class="link">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#4</span>Zorkiy Club</h4>
+				<div class="work-body">
+					<span class="desc"> Website for selling goods. Custom design. Website did not start. </span>
+					<a href="http://zorkiyclub.ru/" class="link">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#5</span>My Nuxt.js website</h4>
+				<div class="work-body">
+					<span class="desc"> Website for learning Vue/Nuxt. Own design. (herokuapp.com) </span>
+					<a href="https://kudr-dev.herokuapp.com/" class="link">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#6</span>Melita sevice center</h4>
+				<div class="work-body">
+					<span class="desc"> Website for service center. Custom design. </span>
+					<a href="https://melit-srvc.center/" class="link">take a look</a>
+				</div>
+			</div>
+		</main>
+
+		<section class="popup">
+			<button type="button" class="btn btn-close"><i class="fas fa-times"></i></button>
+			<h4 class="social__title">Contact</h4>
+			<a class="social__link" href="https://github.com/ENG1N3X/" target="_blank">Github <i class="fab fa-github"></i></a>
+			<a class="social__link" href="http://t-do.ru/eng1n3x/" target="_blank">Telegram <i class="fab fa-telegram"></i></a>
+			<a class="social__link" href="mailto:eng1n3x.developer@gmail.com" target="_blank">Mail <i class="fas fa-envelope-open-text"></i></a>
+		</section>
+
+		<script type="text/javascript">
+			const bodyIndex = document.querySelector("body.index-template");
+			const btnOpen = bodyIndex.querySelector(".btn-contact");
+			const btnClose = bodyIndex.querySelector(".btn-close");
+			const popup = bodyIndex.querySelector(".popup");
+
+			btnOpen.addEventListener("click", function () {
+				bodyIndex.classList.add("popup-opened");
+			});
+
+			btnClose.addEventListener("click", function () {
+				bodyIndex.classList.remove("popup-opened");
+			});
+		</script>
+	</body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>kudr.dev</title>
+ </head>
+ <body class="index-template">
+    <section class="social">
+        <a class="social__link" href="https://eng1n3x.github.io/" target="_blank"><i class="fas fa-home"></i></a>
+        <a class="social__link" href="https://github.com/ENG1N3X/" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="social__link" href="http://t-do.ru/eng1n3x/" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a class="social__link" href="mailto:eng1n3x.developer@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+    </section>
+    <section class="container">
+        <div class="search-bar">
+            <label for="search-bar__input" class="search-bar__label">Search by Github login</label>
+            <input id="search-bar__input" type="text" class="search-bar__input" placeholder="eng1n3x">
+        </div>
+    </section>
+    <section class="container">
+        <div id="card-wrapper"></div>
+        <div class="loader hide"></div>
+        <span class="error">You haven't searched for a user yet.</span>
+    </section>
+  <script type="module" src="js/main.js"></script>
+ </body>
+</html>

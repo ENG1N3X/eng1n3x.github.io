@@ -1,0 +1,20 @@
+{
+ "name": "let-me-introduce-myself",
+ "version": "1.0.0",
+ "description": "let-me-introduce-myself website",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/ENG1N3X/eng1n3x.github.io.git"
+ },
+ "keywords": [],
+ "author": "eng1n3x",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/ENG1N3X/eng1n3x.github.io/issues"
+ },
+ "homepage": "https://github.com/ENG1N3X/eng1n3x.github.io#readme"
+}

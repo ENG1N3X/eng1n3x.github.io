@@ -1,0 +1,229 @@
+//fonts
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../assets/fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../assets/fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../assets/fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../assets/fonts/GothamProBold/GothamProBold.eot");
+  src: url("../assets/fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../assets/fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.static__container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+
+// navigation
+
+.navigation {
+  background-color: #0098db;
+}
+
+.navigation__nav {
+  justify-content: center;
+}
+
+.navigation__nav-link {
+  height: 50px;
+  max-width: 310px;
+  width: 100%;
+
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0098db;
+
+  font-family: "GothamProBold";
+  font-size: 15px;
+  line-height: 14px;
+  color: #fff;
+
+  border-left: 1px solid #53c9fe;
+  border-right: 1px solid #53c9fe;
+}
+
+// header
+
+.header {
+  background-image: url(../img/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  padding-top: 75px;
+}
+
+.header__title {
+  max-width: 490px;
+
+  font-family: "GothamProBold";
+  font-size: 28px;
+  line-height: 40px;
+  color: #1c8ec0;
+
+  margin-bottom: 30px;
+}
+
+.header__desc {
+  max-width: 490px;
+
+  font-family: "GothamProRegular";
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+
+  margin-bottom: 70px;
+}
+
+.header__title,
+.header__desc {
+  margin-left: 33px;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+
+  background: #ffffff;
+  border: 3px solid #0098db;
+  box-shadow: 0px 0px 10px rgba(83, 201, 254, 0.44);
+  border-radius: 3px;
+}
+
+.number {
+  position: relative;
+
+  max-width: 290px;
+  width: 100%;
+}
+
+.number-active {
+  display: block !important;
+}
+
+.number__button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+
+  .number__text {
+    font-family: "GothamProRegular";
+    font-size: 14px;
+    line-height: 13px;
+    color: #040404;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+
+  i {
+    font-size: 25px;
+    color: #ff6847;
+  }
+}
+
+.number__items {
+  position: absolute;
+  bottom: -180px;
+  left: 0;
+  width: 100%;
+  display: none;
+
+  background: #ffffff;
+  border: 1px solid #0098db;
+  box-shadow: 0px 0px 25px rgba(0, 152, 219, 0.21);
+}
+
+.number__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  border-bottom: 1px solid #e9e9e9;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.number__app {
+  margin: 0;
+
+  font-family: "GothamProBold";
+  font-size: 14px;
+  line-height: 30px;
+  color: #242424;
+}
+
+.number__choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 110px;
+  width: 100%;
+}
+
+.number__sign {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+
+  color: #0098db;
+  width: 34px;
+  height: 34px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    color: #0098db;
+  }
+}
+
+.number__num {
+  color: #3a3a3a;
+  font-size: 14px;
+  font-family: "GothamProBold";
+  line-height: 168.22%;
+}
+
+.header__button {
+  font-family: "GothamProBold";
+  font-size: 18px;
+  line-height: 168.22%;
+  color: #fff;
+
+  background: #fc6341;
+  border-radius: 3px;
+
+  height: 50px;
+  max-width: 260px;
+  width: 100%;
+}
