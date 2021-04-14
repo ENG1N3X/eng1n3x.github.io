@@ -95,12 +95,9 @@ main::-webkit-scrollbar-thumb {
 main .work {
   background-color: #cfcfcf;
   margin-bottom: 5px;
-  cursor: help;
+  cursor: pointer;
 }
-main .work:hover {
-  transition: all 0.3s linear;
-}
-main .work:hover .work-body {
+main .work.collapsed .work-body {
   max-height: 200px;
   opacity: 1;
 }
@@ -126,8 +123,8 @@ main .work .work-header .number {
 main .work .work-body {
   transition: all 0.3s linear;
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
+  overflow: hidden;
 }
 main .work .work-body .desc {
   display: block;

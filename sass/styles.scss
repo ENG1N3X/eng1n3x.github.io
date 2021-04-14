@@ -104,9 +104,8 @@ main {
 	.work {
 		background-color: #cfcfcf;
 		margin-bottom: 5px;
-		cursor: help;
-		&:hover {
-			transition: all 0.3s linear;
+		cursor: pointer;
+		&.collapsed {
 			.work-body {
 				max-height: 200px;
 				opacity: 1;
@@ -132,8 +131,8 @@ main {
 		.work-body {
 			transition: all 0.3s linear;
 			max-height: 0;
-			overflow: hidden;
 			opacity: 0;
+			overflow: hidden;
 			.desc {
 				display: block;
 				padding: 10px;
