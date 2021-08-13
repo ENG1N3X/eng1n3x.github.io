@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Yuriy K.</title>
+	</head>
+	<body class="index-template">
+		<header>
+			<h1 class="title">Yuriy K. / eng1n3x</h1>
+		</header>
+
+		<section class="info">
+			<button type="button" class="btn btn-contact">contact</button>
+			<div class="image">
+				<img src="./static/img/logo.png" alt="logo" />
+			</div>
+		</section>
+
+		<main>
+			<div class="work">
+				<h4 class="work-header"><span class="number">#1</span>A MA MANIERE</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design. </span>
+					<a href="https://www.a-ma-maniere.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#2</span>A MA MANIERE Projects</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design. </span>
+					<a href="https://amamaniere-projects.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+			
+			<div class="work">
+				<h4 class="work-header"><span class="number">#3</span>APB</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design. </span>
+					<a href="https://www.apbstore.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+			
+			<div class="work">
+				<h4 class="work-header"><span class="number">#4</span>Eastside Golf</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design. </span>
+					<a href="https://eastsidegolf.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#5</span>Social Status</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design. </span>
+					<a href="https://www.socialstatuspgh.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#6</span>Melt Cosmetics</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design.</span>
+					<a href="https://www.meltcosmetics.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+			
+			<div class="work">
+				<h4 class="work-header"><span class="number">#7</span>Get back Necklaces</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design.</span>
+					<a href="https://www.getbacknecklaces.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+			
+			<div class="work">
+				<h4 class="work-header"><span class="number">#8</span>Feature</h4>
+				<div class="work-body">
+					<span class="desc">Website for shopify platform. Custom design.</span>
+					<a href="https://feature.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+
+			<div class="work">
+				<h4 class="work-header"><span class="number">#9</span>My Nuxt.js website</h4>
+				<div class="work-body">
+					<span class="desc">Website for learning Vue/Nuxt. Own design. (herokuapp.com) </span>
+					<a href="https://kudr-dev.herokuapp.com/" class="link" target="_blank">take a look</a>
+				</div>
+			</div>
+			
+		</main>
+
+		<section class="popup">
+			<button type="button" class="btn btn-close"><i class="fas fa-times"></i></button>
+			<h4 class="social__title">Contact</h4>
+			<a class="social__link" href="https://github.com/ENG1N3X/" target="_blank">Github <i class="fab fa-github"></i></a>
+			<a class="social__link" href="http://t-do.ru/eng1n3x/" target="_blank">Telegram <i class="fab fa-telegram"></i></a>
+			<a class="social__link" href="mailto:eng1n3x.developer@gmail.com" target="_blank">Mail <i class="fas fa-envelope-open-text"></i></a>
+		</section>
+
+		<script type="text/javascript">
+			const bodyIndex = document.querySelector("body.index-template")
+			const btnOpen = bodyIndex.querySelector(".btn-contact")
+			const btnClose = bodyIndex.querySelector(".btn-close")
+			const popup = bodyIndex.querySelector(".popup")
+			const work = bodyIndex.querySelectorAll(".work")
+
+			btnOpen.addEventListener("click", function () {
+				bodyIndex.classList.add("popup-opened")
+			})
+
+			btnClose.addEventListener("click", function () {
+				bodyIndex.classList.remove("popup-opened")
+			})
+
+			for (i = 0; i < work.length; i++) {
+				work[i].addEventListener("click", function () {
+					this.classList.toggle("collapsed")
+				})
+			}
+		</script>
+	</body>
+</html>
