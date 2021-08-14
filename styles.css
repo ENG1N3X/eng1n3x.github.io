@@ -21,7 +21,7 @@ body {
 	left: 50%;
 	top: 10px;
 	transform: translateX(-50%);
-	animation: top 1.5s linear infinite;
+	animation: top 2s linear infinite;
 }
 
 @keyframes top {
@@ -29,7 +29,7 @@ body {
 		top: 10px;
 	}
 	50% {
-		top: 15px;
+		top: 25px;
 	}
 	100% {
 		top: 10px;
