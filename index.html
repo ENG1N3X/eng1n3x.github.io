@@ -27,13 +27,13 @@
 		</style>
 	</head>
 	<body class="bg-gradient-to-r from-purple-700 to-rose-900">
-		<script type="importmap">
+		<!-- <script type="importmap">
 			{
 				"imports": {
 					"vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js"
 				}
 			}
-		</script>
+		</script> -->
 
 		<div id="app" v-cloak>
 			<header class="max-w-screen-xl mx-auto px-4 py-2 bg-gradient-to-r from-purple-600 to-rose-800">
@@ -60,9 +60,12 @@
 			</header>
 			<main class="max-w-screen-xl mx-auto px-4 py-12">
 				<div class="flex flex-wrap">
-					<template v-for="project in projects" :key="project.id">
+					<template v-for="(project, index) in projects" :key="project.id">
 						<a :href="project.url" target="_blank" class="w-full md:w-1/2 lg:w-1/3 block group transition-transform p-4 mb-3">
-							<div class="relative aspect-square overflow-hidden">
+							<div 
+								class="relative aspect-square overflow-hidden"
+								:class="index % 2 == 0 && 'rounded-full'"
+							>
 								<img class="w-full h-full object-cover group-hover:scale-[1.01]" :src="project.image" :alt="project.name" loading="lazy" />
 							</div>
 							<h3 class="text-xl text-center text-white uppercase underline mt-2">{{ project.name }}</h3>
@@ -77,10 +80,14 @@
 			</footer>
 		</div>
 
-		<script type="module">
-			import { createApp } from "vue"
-
-			createApp({
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.prod.min.js"
+			integrity="sha512-3CesFAr6COyDB22AiVG2erk2moD1FeL3VMx6UezptTW3qmYdcQhfv6yDGmH4ICNTxd0Rs2AbMQ0Q5lG7J/8n3Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script>
+			Vue.createApp({
 				data() {
 					return {
 						isH2Clicked: false,
@@ -140,13 +147,13 @@
 								image: "./winest.jpg",
 								url: "https://winest.store/",
 							},
-// 							{
-// 								id: new Date(),
-// 								name: "Nuxt Shop",
-// 								desc: "Website for learning Vue/Nuxt. Own design.",
-// 								image: "./nuxt-shop.jpg",
-// 								url: "https://nuxtshop.herokuapp.com/",
-// 							},
+							// 							{
+							// 								id: new Date(),
+							// 								name: "Nuxt Shop",
+							// 								desc: "Website for learning Vue/Nuxt. Own design.",
+							// 								image: "./nuxt-shop.jpg",
+							// 								url: "https://nuxtshop.herokuapp.com/",
+							// 							},
 							{
 								id: new Date(),
 								name: "Melt Cosmetics",
@@ -186,7 +193,7 @@
 					}
 				},
 				created() {
-					console.log("Hello! My name is Yuriy and i am Shopify Expert & Frontend Developer. Nice to meet you!");
+					console.log("Hello! My name is Yuriy and i am Shopify Expert & Frontend Developer. Nice to meet you!")
 				},
 				methods: {
 					reverseText(text) {
