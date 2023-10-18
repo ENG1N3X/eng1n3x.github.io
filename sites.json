@@ -1,0 +1,135 @@
+[
+  {
+    "id": 0,
+    "name": "Feature",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/feature.jpg",
+    "url": "https://feature.com/"
+  },
+  {
+    "id": 1,
+    "name": "Burch Barrel",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/burchbarrel.png",
+    "url": "https://burchbarrel.com/"
+  },
+  {
+    "id": 2,
+    "name": "CRSVR",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/crsvr.jpeg",
+    "url": "https://crsvr.com/"
+  },
+  {
+    "id": 3,
+    "name": "All The Right",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/atr.jpeg",
+    "url": "https://alltheright.com/"
+  },
+  {
+    "id": 4,
+    "name": "Capsule",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/capsule.jpeg",
+    "url": "https://capsule.nyc/"
+  },
+  {
+    "id": 5,
+    "name": "Ecomarket",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/ecomarket.jpeg",
+    "url": "https://ecomarket.com/"
+  },
+  {
+    "id": 6,
+    "name": "Sartale",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/sartale.jpg",
+    "url": "https://sartale.com/"
+  },
+  {
+    "id": 7,
+    "name": "Sinobi",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/sinobi.jpg",
+    "url": "https://sinobiofficial.com/"
+  },
+  {
+    "id": 8,
+    "name": "HandyKith",
+    "desc": "FIGMA2HTML. Custom design.",
+    "image": "./assets/images/handykith.jpg",
+    "url": "https://handykith.com/"
+  },
+    {
+    "id": 9,
+    "name": "Ashley LongShore",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/ashley.jpg",
+    "url": "https://ashleylongshore.com/"
+  },
+  {
+    "id": 10,
+    "name": "Red Raider Outfitter",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/red-raider-outfitter.jpeg",
+    "url": "https://red-raider-outfitter-store.myshopify.com/"
+  },
+  {
+    "id": 11,
+    "name": "Winest Shop",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/winest.jpg",
+    "url": "https://winest.store/"
+  },
+  {
+    "id": 12,
+    "name": "Zhedora",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/zhedora.png",
+    "url": "https://zhedora.com/"
+  },
+  {
+    "id": 13,
+    "name": "Chrome Texas",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/chrome.png",
+    "url": "https://shopchrome.com/"
+  },
+  {
+    "id": 14,
+    "name": "Melt Cosmetics",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/melt.jpg",
+    "url": "https://www.meltcosmetics.com/"
+  },
+  {
+    "id": 15,
+    "name": "Eastside Golf",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/eastsidegolf.jpg",
+    "url": "https://eastsidegolf.com/"
+  },
+  {
+    "id": 16,
+    "name": "A Ma Maniere",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/amma.jpg",
+    "url": "https://www.a-ma-maniere.com/"
+  },
+  {
+    "id": 17,
+    "name": "APB",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/apb.jpg",
+    "url": "https://www.apbstore.com/"
+  },
+  {
+    "id": 18,
+    "name": "E3 Ranch",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/e3-meat.jpg",
+    "url": "https://e3meatco.com/"
+  }
+]
