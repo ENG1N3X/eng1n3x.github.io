@@ -59,35 +59,37 @@
 	</head>
 	<body class="bg-gradient-to-r from-green-500 to-blue-900">
 		<div id="app" class="flex flex-col justify-between min-h-screen" v-cloak>
-			<header class="max-w-screen-xl w-full mx-auto px-4 py-2 bg-gradient-to-r from-blue-600 to-green-800">
-				<div class="flex items-center flex-col sm:flex-row justify-center sm:justify-between">
-					<a href="/" class="w-32 h-32 shadow-2xl group">
-						<img class="w-full h-full transition-transform group-hover:rotate-180" src="./assets/logo.png" alt="logo" loading="lazy" />
-					</a>
-					<div>
-						<h1 class="text-white text-2xl uppercase tracking-widest text-center cursor-pointer">
-							{{ textContent.h1 }}
-						</h1>
-						<h2 class="text-white text-lg capitalize text-center underline cursor-pointer tracking-widest">{{ textContent.h2 }}</h2>
-					</div>
-					<div class="flex items-center">
-						<a href="https://github.com/ENG1N3X/" class="block w-10 h-10 transition-opacity hover:opacity-60 mr-2" target="_blank">
-							<img class="w-full h-full" src="./assets/icons/icon-github.svg" alt="github" />
+			<header class="bg-gradient-to-r from-blue-600 to-green-800 p-4">
+				<div class="max-w-screen-xl w-full mx-auto">
+					<div class="flex items-center flex-col sm:flex-row justify-center sm:justify-between">
+						<a href="/" class="w-32 h-32 shadow-2xl group">
+							<img class="w-full h-full transition-transform group-hover:rotate-180" src="./assets/logo.png" alt="logo" loading="lazy" />
 						</a>
-						<a href="https://teleg.run/eng1n3x" class="block w-10 h-10 transition-opacity hover:opacity-60 mr-2" target="_blank">
-							<img class="w-full h-full" src="./assets/icons/icon-telegram.svg" alt="telegram" />
-						</a>
-						<a href="mailto:eng1n3x.developer@gmail.com" class="block w-10 h-10 transition-opacity hover:opacity-60" target="_blank">
-							<img class="w-full h-full" src="./assets/icons/icon-mail.svg" alt="mail" />
-						</a>
+						<div>
+							<h1 class="text-white text-2xl uppercase tracking-widest text-center">
+								{{ textContent.h1 }}
+							</h1>
+							<h2 class="text-white text-lg capitalize text-center underline tracking-widest">{{ textContent.h2 }}</h2>
+						</div>
+						<div class="flex items-center">
+							<a href="https://github.com/ENG1N3X/" class="block w-10 h-10 transition-opacity hover:opacity-60 mr-2" target="_blank">
+								<img class="w-full h-full" src="./assets/icons/icon-github.svg" alt="github" />
+							</a>
+							<a href="https://teleg.run/eng1n3x" class="block w-10 h-10 transition-opacity hover:opacity-60 mr-2" target="_blank">
+								<img class="w-full h-full" src="./assets/icons/icon-telegram.svg" alt="telegram" />
+							</a>
+							<a href="mailto:eng1n3x.developer@gmail.com" class="block w-10 h-10 transition-opacity hover:opacity-60" target="_blank">
+								<img class="w-full h-full" src="./assets/icons/icon-mail.svg" alt="mail" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</header>
 			<main class="max-w-screen-xl w-full mx-auto px-4 py-12">
-				<div class="grid grid-cols-2 xl:grid-cols-3 gap-3">
+				<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 					<template v-for="(project, index) in projects" :key="project.id">
 						<a :href="project.url" class="block group transition-transform p-4" target="_blank">
-							<div class="relative aspect-square overflow-hidden" :class="index % 2 == 0 ? 'rounded-full' : 'rounded-[20%]'">
+							<div class="relative aspect-square overflow-hidden">
 								<img class="w-full h-full object-cover transition-transform group-hover:scale-[1.05]" :src="project.image" :alt="project.name" loading="lazy" />
 							</div>
 							<h3 class="text-xl text-center text-white uppercase underline mt-2">{{ project.name }}</h3>
@@ -96,9 +98,11 @@
 					</template>
 				</div>
 			</main>
-			<footer class="max-w-screen-xl w-full mx-auto px-4 py-4 bg-gradient-to-r from-blue-600 to-green-800">
-				<a href="https://github.com/ENG1N3X/" class="block text-center text-white transition-opacity hover:opacity-60" target="_blank">{{ textContent.author }}</a>
-				<span class="block text-center text-white">{{ textContent.nickname }}</span>
+			<footer class="bg-gradient-to-r from-blue-600 to-green-800 p-4">
+				<div class="max-w-screen-xl w-full mx-auto">
+					<a href="https://github.com/ENG1N3X/" class="block text-center text-white transition-opacity hover:opacity-60" target="_blank">{{ textContent.author }}</a>
+					<span class="block text-center text-white">{{ textContent.nickname }}</span>
+				</div>
 			</footer>
 
 			<div v-show="pending" class="fixed inset-0 z-10 flex justify-center items-center bg-black bg-opacity-50">
@@ -118,7 +122,7 @@
 					return {
 						pending: true,
 						textContent: {
-							h1: "Welcome!",
+							h1: "Yuriy K.",
 							h2: "Shopify Expert & Frontend Developer",
 							author: "Author: Yuriy Kudriavtsev",
 							nickname: "©eng1n3x",
