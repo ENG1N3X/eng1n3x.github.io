@@ -14,11 +14,53 @@
     "url": "https://www.burnoutworkshop.ru/"
   },
   {
+    "id": 8,
+    "name": "HandyKith",
+    "desc": "FIGMA2HTML. Custom design.",
+    "image": "./assets/images/handykith.jpg",
+    "url": "https://handykith.com/"
+  },
+  {
+    "id": 12,
+    "name": "Zhedora",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/zhedora.png",
+    "url": "https://zhedora.com/"
+  },
+  {
+    "id": 14,
+    "name": "Melt Cosmetics",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/melt.jpg",
+    "url": "https://www.meltcosmetics.com/"
+  },
+  {
+    "id": 17,
+    "name": "APB",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/apb.jpg",
+    "url": "https://www.apbstore.com/"
+  },
+  {
     "id": 2,
     "name": "CRSVR",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/crsvr.jpeg",
     "url": "https://crsvr.com/"
+  },
+  {
+    "id": 9,
+    "name": "Ashley LongShore",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/ashley.jpg",
+    "url": "https://ashleylongshore.com/"
+  },
+  {
+    "id": 11,
+    "name": "Winest Shop",
+    "desc": "Website for shopify platform. Custom design.",
+    "image": "./assets/images/winest.jpg",
+    "url": "https://winest.store/"
   },
   {
     "id": 3,
@@ -35,20 +77,6 @@
     "url": "https://capsule.nyc/"
   },
   {
-    "id": 8,
-    "name": "HandyKith",
-    "desc": "FIGMA2HTML. Custom design.",
-    "image": "./assets/images/handykith.jpg",
-    "url": "https://handykith.com/"
-  },
-    {
-    "id": 9,
-    "name": "Ashley LongShore",
-    "desc": "Website for shopify platform. Custom design.",
-    "image": "./assets/images/ashley.jpg",
-    "url": "https://ashleylongshore.com/"
-  },
-  {
     "id": 10,
     "name": "Red Raider Outfitter",
     "desc": "Website for shopify platform. Custom design.",
@@ -56,38 +84,10 @@
     "url": "https://red-raider-outfitter-store.myshopify.com/"
   },
   {
-    "id": 11,
-    "name": "Winest Shop",
-    "desc": "Website for shopify platform. Custom design.",
-    "image": "./assets/images/winest.jpg",
-    "url": "https://winest.store/"
-  },
-  {
-    "id": 12,
-    "name": "Zhedora",
-    "desc": "Website for shopify platform. Custom design.",
-    "image": "./assets/images/zhedora.png",
-    "url": "https://zhedora.com/"
-  },
-  {
     "id": 13,
     "name": "Chrome Texas",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/chrome.png",
     "url": "https://shopchrome.com/"
-  },
-  {
-    "id": 14,
-    "name": "Melt Cosmetics",
-    "desc": "Website for shopify platform. Custom design.",
-    "image": "./assets/images/melt.jpg",
-    "url": "https://www.meltcosmetics.com/"
-  },
-  {
-    "id": 17,
-    "name": "APB",
-    "desc": "Website for shopify platform. Custom design.",
-    "image": "./assets/images/apb.jpg",
-    "url": "https://www.apbstore.com/"
   }
 ]
