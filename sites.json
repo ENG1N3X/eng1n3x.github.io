@@ -4,62 +4,71 @@
     "name": "Feature",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/feature.jpg",
-    "url": "https://feature.com/"
+    "url": "https://feature.com/",
+    "type": "Shopify"
   },
   {
     "id": 1,
     "name": "Capsule",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/capsule.jpeg",
-    "url": "https://capsule.nyc/"
+    "url": "https://capsule.nyc/",
+    "type": "Shopify"
   },
   {
     "id": 2,
     "name": "HandyKith",
     "desc": "FIGMA2HTML. Custom design.",
     "image": "./assets/images/handykith.jpg",
-    "url": "https://handykith.com/"
+    "url": "https://handykith.com/",
+    "type": "WordPress"
   },
   {
     "id": 3,
     "name": "Red Raider Outfitter",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/red-raider-outfitter.jpeg",
-    "url": "https://red-raider-outfitter-store.myshopify.com/"
+    "url": "https://red-raider-outfitter-store.myshopify.com/",
+    "type": "Shopify"
   },
   {
     "id": 4,
     "name": "Winest Shop",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/winest.jpg",
-    "url": "https://winest.store/"
+    "url": "https://winest.store/",
+    "type": "Shopify"
   },
   {
     "id": 5,
     "name": "Zhedora",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/zhedora.png",
-    "url": "https://zhedora.com/"
+    "url": "https://zhedora.com/",
+    "type": "Shopify"
   },
   {
     "id": 6,
     "name": "Chrome Texas",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/chrome.png",
-    "url": "https://shopchrome.com/"
+    "url": "https://shopchrome.com/",
+    "type": "Shopify"
   },
   {
     "id": 7,
     "name": "Melt Cosmetics",
     "desc": "Website for shopify platform. Custom design.",
     "image": "./assets/images/melt.jpg",
-    "url": "https://www.meltcosmetics.com/"
+    "url": "https://www.meltcosmetics.com/",
+    "type": "Shopify"
   },
   {
     "id": 8,
     "name": "Burnout Workshop",
     "desc": "AutoService. Custom design.",
     "image": "./assets/images/burnoutworkshop.jpeg",
-    "url": "https://www.burnoutworkshop.ru/"
+    "url": "https://www.burnoutworkshop.ru/",
+    "type": "Nuxt 3"
   }
 ]
