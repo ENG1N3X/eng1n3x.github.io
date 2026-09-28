@@ -41,7 +41,16 @@ export function numberStats(values) {
   return { min, max, sum, avg };
 }
 
-export function buildNumberChart(ctx, values) {
+// Подписи осей + "записей" в тултипе — без этого непонятно, что Y это
+// количество строк с таким значением/диапазоном, а не само значение.
+function countAxes(xLabel) {
+  return {
+    x: { title: { display: true, text: xLabel, font: { size: 10 } } },
+    y: { title: { display: true, text: "записей", font: { size: 10 } }, ticks: { precision: 0 } },
+  };
+}
+
+export function buildNumberChart(ctx, values, xLabel = "значение") {
   const unique = [...new Set(values)];
   if (unique.length <= 10) {
     const counts = countBy(values);
@@ -50,9 +59,9 @@ export function buildNumberChart(ctx, values) {
       type: "bar",
       data: {
         labels: entries.map(([v]) => String(v)),
-        datasets: [{ data: entries.map(([, c]) => c), backgroundColor: colorAt(0) }],
+        datasets: [{ label: "записей", data: entries.map(([, c]) => c), backgroundColor: colorAt(0) }],
       },
-      options: baseOptions,
+      options: { ...baseOptions, scales: countAxes(xLabel) },
     });
   }
 
@@ -75,8 +84,8 @@ export function buildNumberChart(ctx, values) {
 
   return new Chart(ctx, {
     type: "bar",
-    data: { labels, datasets: [{ data: bins, backgroundColor: colorAt(0) }] },
-    options: baseOptions,
+    data: { labels, datasets: [{ label: "записей", data: bins, backgroundColor: colorAt(0) }] },
+    options: { ...baseOptions, scales: countAxes(`${xLabel} (диапазон)`) },
   });
 }
 
@@ -121,7 +130,7 @@ export function buildBooleanChart(ctx, values) {
   });
 }
 
-export function buildDateChart(ctx, values) {
+export function buildDateChart(ctx, values, xLabel = "дата") {
   const dates = values.map((v) => new Date(v)).filter((d) => !Number.isNaN(d.getTime()));
   const spanDays = dates.length
     ? (Math.max(...dates) - Math.min(...dates)) / 86400000
@@ -143,6 +152,7 @@ export function buildDateChart(ctx, values) {
     data: {
       labels,
       datasets: [{
+        label: "записей",
         data: labels.map((l) => buckets.get(l)),
         borderColor: colorAt(0),
         backgroundColor: colorAt(0) + "33",
@@ -150,13 +160,13 @@ export function buildDateChart(ctx, values) {
         tension: 0.25,
       }],
     },
-    options: baseOptions,
+    options: { ...baseOptions, scales: countAxes(xLabel) },
   });
 }
 
-export function buildArrayLengthChart(ctx, values) {
+export function buildArrayLengthChart(ctx, values, xLabel = "значение") {
   const lengths = values.map((v) => v.length);
-  return buildNumberChart(ctx, lengths);
+  return buildNumberChart(ctx, lengths, `${xLabel}: длина массива`);
 }
 
 // Общий график-сравнение раздела: несколько числовых полей как линии
@@ -188,11 +198,11 @@ export function buildTrendChart(ctx, labels, series) {
 }
 
 const CHART_BUILDERS = {
-  number: buildNumberChart,
-  category: buildCategoryChart,
-  boolean: buildBooleanChart,
-  date: buildDateChart,
-  array: buildArrayLengthChart,
+  number: (ctx, field) => buildNumberChart(ctx, field.values, field.key),
+  category: (ctx, field) => buildCategoryChart(ctx, field.values),
+  boolean: (ctx, field) => buildBooleanChart(ctx, field.values),
+  date: (ctx, field) => buildDateChart(ctx, field.values, field.key),
+  array: (ctx, field) => buildArrayLengthChart(ctx, field.values, field.key),
 };
 
 export function hasChartFor(type) {
@@ -201,5 +211,5 @@ export function hasChartFor(type) {
 
 export function buildChartForField(ctx, field) {
   const builder = CHART_BUILDERS[field.type];
-  return builder ? builder(ctx, field.values) : null;
+  return builder ? builder(ctx, field) : null;
 }
